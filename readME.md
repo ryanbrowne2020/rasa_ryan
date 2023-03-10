@@ -20,3 +20,5 @@ Switch between English/Japanese by setting
 translatetoJapanese = True / False 
 ```
 (inside action_ryan_criteria.py)
+
+Note: the pipeline is different to the EU system
