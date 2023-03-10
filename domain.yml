@@ -1,0 +1,234 @@
+version: "3.1"
+
+intents:
+### nlu.yml
+  - greet
+  - not_much
+  - quite_a_lot
+  - request_different_suggestion
+  - learn_more_general
+  - request_specifics
+  - info_challenge
+  - inform_lack_domain_interest
+  - inform_plan
+  - greet_robot
+  - request_rephrase
+  - request_functionalities
+  - goodbye
+  - affirm
+  - deny
+  - user_thinking
+  - mood_great
+  - gratitude
+  - mood_unhappy
+  - bot_challenge
+  - user_understood
+  - request_coaching_levels
+### nlu_extra.yml
+# Local topics: activities, family, trash
+  - desire_activity
+  - inform_visit_children
+  - inform_family_children
+  - inform_missing
+  - inform_rememberance
+  - request_trash_info
+  - inform_errands #LOC07
+  - altruism #LOC08
+  - sustainability #LOC09
+# Domain: Cognitive 
+  - inform_want_play_braintraining_game
+  - inform_use_tablet
+  - inform_finished_braintraining
+  - learn_cognitive
+  - learn_cognitive_more
+  - cognitive_question
+  - inform_brain_issue
+  - request_stress_advice #COG08
+  - request_cognitive_intervention #COG09
+  - cognitive_supplements #COG10
+# Domain: Social 
+  - inform_volunteer
+  - inform_desire_volunteer_work
+  - inform_hobby
+  - request_local_events
+  - inform_free_time
+  - request_new_contact
+  - request_set_reminder
+  - inform_future_activity
+  - inform_habits
+  - request_social_advice #SOC10
+  - request_social_benefits #SOC11
+  - request_hobby_advice #SOC12
+  - inform_social_no #SOC13
+# Domain: Spiritual
+  - inform_spiritual_activity
+  - request_wise_words
+# Chit-chat
+  - inform_pets
+  - inform_filmsTV
+  - inform_travel_plan
+  - inform_recent_events
+# Domain: Sleep
+  - inform_positive_sleep
+  - inform_negative_sleep
+  - request_sleep_quantity #SL03
+  - request_personalized_sleep_quantity #SL04
+  - request_sleep_advice #SL05
+  - nutrition_for_sleep #SL06
+  - sleep_routine #SL07
+  - sleep_relax #SL08
+  - fall_asleep #SL09
+# Domain: Exercise
+  - inform_exercise_feedback
+  - inform_exercise_outside
+  - request_exercise_info
+  - request_current_exercise_info
+  - open_exercise_response_positive
+  - open_exercise_response_negative
+  - open_exercise_response_neutral
+  - request_exercise_advice #EX08
+  - request_exercise_freq #EX09
+  - mobility #EX10
+# Domain: Nutrition
+  - request_mealplan
+  - request_diet_advice
+  - request_specific_food_advice_meat
+  - request_recipe
+  - request_healthy_snack #NU05
+  - request_specific_food_advice_fruitveg #NU06
+  - request_dining_advice #NU07
+  - supplements_vitamins #NU08
+# Domain: General Health
+  - request_general_health_response
+  - request_health_info
+  - under_the_weather
+  - take_it_easy
+  - request_smoking_advice
+  - request_weight_advice
+  - social_emotional_wellbeing
+  - normal_check
+
+actions:
+  - check_criteria
+### top
+  - custom_response_story_TOP01
+  - custom_response_story_TOP02
+  - custom_response_story_TOP03
+  - custom_response_story_TOP04
+  - custom_response_story_TOP05
+  - custom_response_story_TOP06
+#no top07
+  - custom_response_story_TOP08
+  - custom_response_story_TOP09
+  - custom_response_story_TOP10
+  - custom_response_story_TOP11
+#no top12
+  - custom_response_story_TOP13
+  - custom_response_story_TOP14
+### local topics
+  - custom_response_story_LOC01
+  - custom_response_story_LOC02
+  - custom_response_story_LOC03
+  - custom_response_story_LOC04
+  - custom_response_story_LOC05
+  - custom_response_story_LOC06
+  - custom_response_story_LOC07
+  - custom_response_story_LOC08
+  - custom_response_story_LOC09
+###cog
+  - custom_response_story_COG01
+  - custom_response_story_COG02
+  - custom_response_story_COG03
+  - custom_response_story_COG04
+  - custom_response_story_COG05
+  - custom_response_story_COG06
+  - custom_response_story_COG07
+  - custom_response_story_COG08
+  - custom_response_story_COG09
+  - custom_response_story_COG10
+###social
+  - custom_response_story_SOC01
+  - custom_response_story_SOC02
+  - custom_response_story_SOC03
+  - custom_response_story_SOC04
+  - custom_response_story_SOC05
+  - custom_response_story_SOC06
+  - custom_response_story_SOC07
+  - custom_response_story_SOC08
+  - custom_response_story_SOC09
+  - custom_response_story_SOC10
+  - custom_response_story_SOC11
+  - custom_response_story_SOC12
+  - custom_response_story_SOC13
+###spiritual
+  - custom_response_story_SP01
+###chit-chat
+  - custom_response_story_CC01
+  - custom_response_story_CC02
+  - custom_response_story_CC03
+  - custom_response_story_CC04
+### sleep
+  - custom_response_story_SL01
+  - custom_response_story_SL02
+  - custom_response_story_SL03
+  - custom_response_story_SL04
+  - custom_response_story_SL05
+  - custom_response_story_SL06
+  - custom_response_story_SL07
+  - custom_response_story_SL08
+  - custom_response_story_SL09
+### exercise 
+  - custom_response_story_EX01
+  - custom_response_story_EX02
+  - custom_response_story_EX03
+  - custom_response_story_EX04
+  - custom_response_story_EX05
+  - custom_response_story_EX06
+  - custom_response_story_EX07
+  - custom_response_story_EX08
+  - custom_response_story_EX09
+  - custom_response_story_EX10
+### nutrition
+  - custom_response_story_NU01
+  - custom_response_story_NU02
+  - custom_response_story_NU03
+  - custom_response_story_NU04
+  - custom_response_story_NU05
+  - custom_response_story_NU06
+  - custom_response_story_NU07
+  - custom_response_story_NU08
+### general health
+  - custom_response_story_GH01
+  - custom_response_story_GH02
+  - custom_response_story_GH03
+  - custom_response_story_GH04
+  - custom_response_story_GH05
+  - custom_response_story_GH06
+  - custom_response_story_GH07
+  - custom_response_story_GH08
+#other
+  - greet_robot_action
+  
+
+slots:
+  exercise_coaching_level:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: custom
+  text:
+    type: text
+    influence_conversation: False
+    mappings:
+    - type: custom
+
+responses:
+  utter_iamabot:
+  - text: "You said: 'are you a bot?' Yes, I am a robot."
+
+  utter_open:
+  - text: "{text}"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

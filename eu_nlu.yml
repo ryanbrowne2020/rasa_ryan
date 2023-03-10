@@ -1,0 +1,1498 @@
+version: "3.1"
+nlu:
+- intent: change_language
+  examples: |
+    - Can you please change language to [English](language)
+    - I want [English](language) as my conversation language
+    - Can you please talk in [German](language)
+    - I prefer to talk in [German](language)
+    - Please change the language to [English](language)
+    - can we talk in [French](language)
+    - can we speak in [Italian](language)
+    - can we switch to [Japanese](language)
+
+- intent: detect_mood
+  examples: |
+    - i am sad
+    - i am not feeling alright
+    - i am happy 
+    - i am feeling very good
+    - i am joyful today
+    - the weather is very nice
+
+- intent: play_song
+  examples: |
+    - i want to hear [let it rain over me](song)
+    - i would like to hear [the light behind your eyes](song)
+    - i really want to hear [stairway to haven](song)
+    - please play [poker face](song)
+    - can you play [hurt](song)
+
+- intent: detect_name
+  examples: |
+    - My name is [Alex](PERSON)
+    - You can call me [John](PERSON)
+    - You can say my name as [Robert](PERSON)
+    - Call me [Shepherd](PERSON)
+    - you can name me [Conor](PERSON)
+    - Sure, my name is [Fransis](PERSON)
+
+- intent: remember_name
+  examples: |
+    - Can you remember my name?
+    - What is my name?
+    - do you know my name?
+    - What I told you to call me?
+    - With which name you call me?
+    - How people call me?
+    - can you tell me what is my name?
+    - do you know how to call me?
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: chitchat_start
+  examples: |
+    - I want to do chitchat
+    - I would like to do informal talk
+    - Please let us chat
+    - Let us do some small talk
+    - Can we do gossip? 
+    - Hey lets chat 
+  
+- intent: chitchat_end
+  examples: |
+    - I want to end chitchat
+    - I want to finish chitchat
+    - I am finished with this conversation
+    - I want to exit chitchat
+    - I am finished with this conversation
+    - I do not want to continue this conversation
+    
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - that sounds good
+    - correct
+    - good
+    - great
+    - keep going
+    - ok
+    - i would love to
+    - i like to 
+    - yes i want to 
+    - okay
+    - k
+    - ya sure
+    - fine 
+    - alright
+    - yeah
+    - good idea
+    - perfect
+    - I will go for a walk now.
+    - A walk sounds good.
+    - perfect
+    - yes,sure 
+    - why not
+    - i will do that 
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I do not think so
+    - do not like that
+    - no way
+    - not really
+    - no i do not want to
+    - not at all
+    - i cannot
+    - i don't know  
+    - no thanks
+
+#- intent: mood_great
+#  examples: |
+#    - perfect
+#    - great
+#    - amazing
+#    - feeling like a king
+#    - wonderful
+#    - I am feeling very good
+#    - I am great
+#    - I am amazing
+#    - I am going to save the world
+#    - super stoked
+#    - extremely good
+#    - so so perfect
+#    - so good
+#    - so perfect
+
+
+#- intent: mood_unhappy
+#  examples: |
+#    - my day was horrible
+#    - I am sad
+#    - I do not feel very well
+#    - I am disappointed
+#    - super sad
+#    - I'm so sad
+#    - sad
+#    - very sad
+#    - unhappy
+#    - not good
+#    - not very good
+#    - extremly sad
+#    - so saad
+#    - so sad
+
+#- intent: haystack_questions
+#  examples: |
+#    - Can you look this up: what is ?
+#    - Look this up: what is?
+#    - Can you check: what is?
+#    - please check: What is ?
+#    - Can you look this up: where is ?
+#    - Look this up: where is?
+#    - Can you check: where is?
+#    - please check: where is ?
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: out_of_scope
+  examples: |
+    - that's not what I want to dothat's not what I want to do
+    - wait stop
+    - you're no help
+    - this is no help at all
+    - how old are you
+    - I want to order a pizza
+    - this is not working
+    - I already told you that
+    - I do not want to tell you that
+    - none of your business
+    - that's not right
+    - stop asking
+    - nevermind
+    - I want to do something else
+    - I changed my mind
+    - Why the world is so cruel?
+    - Why I am human? 
+    - Can you play piano?
+
+#- intent: thankyou
+#  examples: |
+#    - okay great thanks
+#    - thank you
+#    - sure thanks
+#    - thanks bye
+
+- intent: start_excercise
+  examples: |
+    - should i start excercise?
+    - is it the time for excercise?
+    - when is the time for excercise?
+    - when can i start excercise?
+    - is it the time for doing fitness training?
+
+#- intent: ask_exercise
+#  examples: |
+#    - I want to exercise. Please show me an exercise video.
+#    - For exercise how should I proceed?
+#    - How can I start exercise?
+#    - Can I start exercise?
+#    - I want to do fitness training, please guide me how can I do so?
+
+- intent: EXTERNAL_time_for_excercise
+  examples: |
+    - EXTERNAL_time_for_excercise
+
+- intent: start_walking
+  examples: |
+    - is it my time for talking a walk?
+    - can I go to walk now?
+    - shall i walk outside?
+    - is it time for me to go outside for a walk?
+    - i want to walk outside?
+
+- intent: starting_dialogues
+  examples: |
+    - lets start
+    - let us start now
+    - we can start 
+    - we shall start
+    - lets begin
+    - we shall begin
+
+- intent: show_news
+  examples: |
+    - show me some news
+    - show me todays news
+    - show me important news
+    - news of the day
+    - news
+    - headlines
+    - I want news
+    - I want to see current news
+    - I want to see news headlines
+    - what are the news for today
+    - what happened today
+
+- intent: show_specific_news
+  examples: |
+    - news about [sports](news_query)
+    - show me news about [football](news_query)
+    - show me todays news regarding [the russian ukrainian conflict](news_query)
+    - show me important news from [japan](news_query)
+    - news about [nfl](news_query)
+    - headlines in [politics](news_query)
+    - headlines about the [russian ukrainian war](news_query)
+    - headlines about [tesla](news_query)
+    - I want the latest news in [politics](news_query)
+    - I want to see current news about the [coronavirus](news_query)
+    - what happened today in [Belgium](news_query)
+    - latest news on [ukraine](news_query)
+    - latest news in [usa](news_query)
+    - latest news in [Togo](news_query)
+
+- intent: show_more_specific_news
+  examples: |
+    - i want specifically news about [bangladeshi politics](news_query_more_specific)
+    - what is currently happening on specifically [italian culture](news_query_more_specific)
+    - latest news on specifically [indian cricket](news_query_more_specific)
+    - news about specifically [war in ukraine](news_query_more_specific)
+    - latest in specifically [turkish culture](news_query_more_specific)
+    - latest in specifically [japanese business](news_query_more_specific)
+    - specifically give me information on current news on [chinese technology](news_query_more_specific)
+
+#- intent: request_exercise_video
+#  examples: |
+#    - show exercise video of [10 minutes](ex_video_time)
+#    - please provide  exercise video of [20 minutes](ex_video_time) of [stretching](exercise_type)
+#    - please show me some  exercise video
+#    - show some exercise video
+#    - i want to do some [stretching](exercise_type) exercise
+#    - provide me some exercise videos
+
+- intent: ask_wiki
+  examples: |
+    - ask wiki about where was obama born?
+    - ask wiki what is the capital of Germany?
+    - ask wikipedia why did the french revolution start?
+    - ask wikipedia about who is Robert Downey Jr married to?
+    - search on wikipedia when does the Olympics take place?
+    - search wikipedia for has messi retired?
+    - search wiki is global warming real?
+    - ask wiki who is the author of Harry Potter?
+    - ask wiki when was robert downey jr born?
+    - ask wikipedia when was apple founded?
+
+- intent: ask_wiki_simple
+  examples: |
+    - ask wiki about [football](simple_search_term)
+    - ask wiki about [cricket](simple_search_term)
+    - ask wiki about [golf](simple_search_term)
+    - ask wiki about [car](simple_search_term)
+    - ask wikipedia about [computer](simple_search_term)
+    - ask wiki about [accident](simple_search_term)
+
+- intent: weather
+  examples: |
+    - what's the weather
+    - what is the weather forecast today
+    - what is the temperature today
+    - what is the temperature
+    - i want to know the temperature
+    - i want to know the weather for today
+    - tell me the weather forecast
+    - how is the weather today
+
+- intent: query_knowledge_base
+  examples: |
+    - I want to know about [disease](object_type).
+    - I want to know about [diseases]{"entity": "object_type", "value": "disease"}.
+    - I want to know about [illness]{"entity": "object_type", "value": "disease"}.
+    - I want to talk further about [disease](object_type).
+    - I want to talk further about [illness]{"entity": "object_type", "value": "disease"}.
+    - Can you tell me further about [disease](object_type)?
+    - Can you tell me further about [illness]{"entity": "object_type", "value": "disease"}?
+    - can you help me with [disease](object_type)
+    - can you help me with [illness]{"entity": "object_type", "value": "disease"}
+    - I need help with a [disease](object_type).
+    - I need help with an [illness]{"entity": "object_type", "value": "disease"}.
+    - I need help with a [fall](object_type).
+    - [disease](object_type)
+    - [illness]{"entity": "object_type", "value": "disease"}
+    - More information about [disease](object_type).
+    - More information about [illness]{"entity": "object_type", "value": "disease"}.
+    - what are the most common types of [diseases]{"entity": "object_type", "value": "disease"}?
+    - what are the most common types of [illnesses]{"entity": "object_type", "value": "disease"}?   
+    - what [diseases]{"entity": "object_type", "value": "disease"} do you provide support for ?
+    - what [illnesses]{"entity": "object_type", "value": "disease"} do you provide support for ?
+    - which [diseases]{"entity": "object_type", "value": "disease"} do you know of?
+    - which [illnesses]{"entity": "object_type", "value": "disease"} do you know of?
+    - please list the [diseases]{"entity": "object_type", "value": "disease"} you know of?
+    - please list the [illnesses]{"entity": "object_type", "value": "disease"} you know of?
+    - name some common [diseases]{"entity": "object_type", "value": "disease"} ?
+    - name some common [illnesses]{"entity": "object_type", "value": "disease"} ?
+    - can you name common [disease]{"entity": "object_type", "value": "disease"} ?
+    - you know about [Diabetes](disease)?
+    - you know about [Hypertension](disease)?
+    - you know about [Depression](disease)?
+    - you know about [PCOD](disease)?
+    - you know about [Sarcopenia](disease)?
+    - you know about [breast cancer](disease)?
+    - list the [diseases]{"entity": "object_type", "value": "disease"} you know about.
+    - list some [disease]{"entity": "object_type", "value": "disease"} you know about.
+    - what is the [definition]{"entity": "attribute", "value": "definition"} of [Diabetes](disease)
+    - what is the [definition]{"entity": "attribute", "value": "definition"} of [Depression](disease)
+    - how is [Hypertension](disease) [defined]{"entity": "attribute", "value": "definition"}
+    - how is [Schizophrenia](disease) [defined]{"entity": "attribute", "value": "definition"}
+    - what is the [definition]{"entity": "attribute", "value": "definition"} of [Anxiety](disease)
+    - how is [Acne](disease) [defined]{"entity": "attribute", "value": "definition"}.
+    - how is [Heart disease](disease) [defined]{"entity": "attribute", "value": "definition"}.   
+    - what is the [cause]{"entity": "attribute", "value": "cause"} of [Sarcopenia](disease)
+    - what is the [cause]{"entity": "attribute", "value": "cause"} of [Overweight and obesity](disease)
+    - what is the [cause]{"entity": "attribute", "value": "cause"} of [Urinary incontinence or loss of bladder control](disease)
+    - what is the [definition]{"entity": "attribute", "value": "definition"} of [PCOD](disease)
+    - what is the [definition]{"entity": "attribute", "value": "definition"} of [Overweight and obesity](disease)
+    - what is the [definition]{"entity": "attribute", "value": "definition"} of [Sarcopenia](disease)
+    - provide the [definition]{"entity": "attribute", "value": "definition"} of [Hormonal imbalance](disease)
+    - [define]{"entity": "attribute", "value": "definition"} [Common cold](disease)
+    - [definition]{"entity": "attribute", "value": "definition"} of [Asthama](disease)
+    - [definition]{"entity": "attribute", "value": "definition"} of [Asthma](disease)
+    - Can you [define]{"entity": "attribute", "value": "definition"} [Bipolar disorder](disease)
+    - how is [Lactose intolerance](disease) [defined]{"entity": "attribute", "value": "definition"}
+    - what is the [definition]{"entity": "attribute", "value": "definition"} of [Thyroid](disease)
+    - how would you [define]{"entity": "attribute", "value": "definition"} of [fourth]{"entity": "mention", "value": "4"} one ?
+    - what is the [definition]{"entity": "attribute", "value": "definition"} of [fifth]{"entity": "mention", "value": "5"} one ?
+    - what is the [definition]{"entity": "attribute", "value": "definition"} of [this disease]{"entity": "mention"}?
+    - Can you provide [definition]{"entity": "attribute", "value": "definition"} of [this]{"entity": "mention"} one?
+    - what is the [definition]{"entity": "attribute", "value": "definition"} of [that disease]{"entity": "mention"}?
+    - what is the [definition]{"entity": "attribute", "value": "definition"} of [it]{"entity": "mention"}?
+    - do you know the [cause]{"entity": "attribute", "value": "cause"} of [Diabetes](disease)?
+    - do you know the [causes]{"entity": "attribute", "value": "cause"} of [Depression](disease)?
+    - do you know the [causes]{"entity": "attribute", "value": "cause"} of [that disease]{"entity": "mention"}?
+    - what is the [cause]{"entity": "attribute", "value": "cause"} of [Hypertension](disease)?
+    - Tell me the [cause]{"entity": "attribute", "value": "cause"} of [Schizophrenia](disease).
+    - what are the [causes]{"entity": "attribute", "value": "cause"} of [Anxiety](disease)?
+    - how do you [get]{"entity": "attribute", "value": "cause"} [Acne](disease)?
+    - suggest the [cause]{"entity": "attribute", "value": "cause"} of [that disease]{"entity": "mention"}?
+    - suggest the [cause]{"entity": "attribute", "value": "cause"} of [Acne](disease)?
+    - suggest the [cause]{"entity": "attribute", "value": "cause"} of [PCOD](disease)
+    - do you know the [cause]{"entity": "attribute", "value": "cause"} of [Hormonal imbalance](disease)?
+    - do you know the [causes]{"entity": "attribute", "value": "cause"} of [Common cold](disease)?
+    - what is the [cause]{"entity": "attribute", "value": "cause"} of [Asthama](disease)?
+    - Tell me the [cause]{"entity": "attribute", "value": "cause"} of [Bipolar disorder](disease).
+    - what are the [causes]{"entity": "attribute", "value": "cause"} of [Lactose intolerance](disease)?
+    - how do you [get]{"entity": "attribute", "value": "cause"} [Acne](disease)?
+    - suggest the [cause]{"entity": "attribute", "value": "cause"} of [Thyroid](disease)?
+    - suggest the [cause]{"entity": "attribute", "value": "cause"} of [Asthma](disease)
+    - what is the [cause]{"entity": "attribute", "value": "cause"} of [first]{"entity": "mention", "value": "1"} one ?
+    - what is the [cause]{"entity": "attribute", "value": "cause"} of [second]{"entity": "mention", "value": "2"} one ?
+    - do you know the [precaution]{"entity": "attribute", "value": "precaution"} of [that disease]{"entity": "mention"}?
+    - do you know the [precautions]{"entity": "attribute", "value": "precaution"} of [that one]{"entity": "mention"}?
+    - do you have advice on how [not to get]{"entity": "attribute", "value": "precaution"} [Diabetes](disease)
+    - how to [avoid]{"entity": "attribute", "value": "precaution"} getting [Depression](disease)
+    - what [precaution]{"entity": "attribute", "value": "precaution"} can i take for [that one]{"entity": "mention"}?
+    - what are [precautions]{"entity": "attribute", "value": "precaution"} for [Hypertension](disease)?
+    - suggest [precautions]{"entity": "attribute", "value": "precaution"} for [that one]{"entity": "mention"}?
+    - how to [prevent]{"entity": "attribute", "value": "precaution"} [Schizophrenia](disease)?
+    - how to [prevent]{"entity": "attribute", "value": "precaution"} [breast cancer](disease)?
+    - what are [preventions]{"entity": "attribute", "value": "precaution"} for [Anxiety](disease)?
+    - what [prevention]{"entity": "attribute", "value": "precaution"} do [they]{"entity": "mention"} suggest?
+    - suggest [prevention measures]{"entity": "attribute", "value": "precaution"} of [Acne](disease).
+    - suggest [prevention]{"entity": "attribute", "value": "precaution"} of the [last one]{"entity": "mention", "value": "LAST"}
+    - do you have advice on how [not to get]{"entity": "attribute", "value": "precaution"} [PCOD](disease)
+    - how to [avoid]{"entity": "attribute", "value": "precaution"} getting [Hormonal imbalance](disease)
+    - what are [precautions]{"entity": "attribute", "value": "precaution"} for [Common cold](disease)?
+    - how to [prevent]{"entity": "attribute", "value": "precaution"} [Asthama](disease)?
+    - what are [preventions]{"entity": "attribute", "value": "precaution"} for [Bipolar disorder](disease)?
+    - suggest [prevention measures]{"entity": "attribute", "value": "precaution"} of [Lactose intolerance](disease).
+    - do you have advice on how [not to get]{"entity": "attribute", "value": "precaution"} [Thyroid](disease)
+    - do you know the [cure]{"entity": "attribute", "value": "cure"} of [that one]{"entity": "mention"}?
+    - do you know the [cure]{"entity": "attribute", "value": "cure"} of [Diabetes](disease)
+    - how to [cure]{"entity": "attribute", "value": "cure"} of [Depression](disease)?
+    - [cure]{"entity": "attribute", "value": "cure"} of [Hypertension]{"entity": "disease"}
+    - suggest the [cure]{"entity": "attribute", "value": "cure"} of [Schizophrenia]{"entity": "disease"}.
+    - suggest [cure]{"entity": "attribute", "value": "cure"} for [Anxiety]{"entity": "disease"}.
+    - suggest [cure]{"entity": "attribute", "value": "cure"} for [that disease]{"entity": "mention", "value": "LAST"}
+    - does [Acne]{"entity": "disease"} have [cure]{"entity": "attribute", "value": "cure"}?
+    - How to [cure]{"entity": "attribute", "value": "cure"} [PCOD]{"entity": "disease"}?
+    - what is the [cure]{"entity": "attribute", "value": "cure"} [first]{"entity": "mention", "value": "1"} one ?
+    - what is the [cure]{"entity": "attribute", "value": "cure"} [second]{"entity": "mention", "value": "2"} one ?
+    - what should i do to [cure]{"entity": "attribute", "value": "cure"} [that disease](mention)?
+    - suggest [cure]{"entity": "attribute", "value": "cure"} of [that one]{"entity": "mention"}?
+    - suggest the [cure]{"entity": "attribute", "value": "cure"} of [Hormonal imbalance](disease)?
+    - suggest the [cure]{"entity": "attribute", "value": "cure"} of [Common cold](disease)?
+    - do you know the [cure]{"entity": "attribute", "value": "cure"} of [Asthama](disease)
+    - how to [cure]{"entity": "attribute", "value": "cure"} of [Bipolar disorder](disease)?
+    - [cure]{"entity": "attribute", "value": "cure"} of [Lactose intolerance]{"entity": "disease"}
+    - suggest the [cure]{"entity": "attribute", "value": "cure"} of [Thyroid]{"entity": "disease"}.
+    - suggest [cure]{"entity": "attribute", "value": "cure"} for [asthma]{"entity": "disease"}.
+    - can you [suggest a diagnosis]{"entity": "attribute", "value": "suggest diagnosis"} for [that one]{"entity": "mention"}?
+    - can you [suggest a diagnosis]{"entity": "attribute", "value": "suggest diagnosis"} for [that disease]{"entity": "mention"}?
+    - can you [suggest a diagnosis]{"entity": "attribute", "value": "suggest diagnosis"} for [this problem]{"entity": "mention"}?
+    - can you [suggest a diagnosis]{"entity": "attribute", "value": "suggest diagnosis"} for [Diabetes]{"entity": "disease"}?
+    - can you [suggest diagnosis]{"entity": "attribute","value": "suggest diagnosis"} for the [last one]{"entity": "mention", "value": "LAST"} ?
+    - what is a [diagnosis]{"entity": "attribute", "value": "suggest diagnosis"} of [Depression]{"entity": "disease"}
+    - can you [diagnose]{"entity": "attribute", "value": "suggest diagnosis"} [Hypertension]{"entity": "disease"}
+    - what would be your [diagnosis]{"entity": "attribute", "value": "suggest diagnosis"} of [Schizophrenia]{"entity": "disease"}
+    - please [diagnose]{"entity": "attribute", "value": "suggest diagnosis"} [Anxiety]{"entity": "disease"}
+    - what is a [diagnosis]{"entity": "attribute", "value": "suggest diagnosis"} of [Acne]{"entity": "disease"}
+    - what is the [diagnosis]{"entity": "attribute", "value": "suggest diagnosis"} of [breast cancer]{"entity": "disease"}
+    - can you [diagnose]{"entity": "attribute", "value": "suggest diagnosis"} [PCOD]{"entity": "disease"}
+    - what would be your [diagnosis]{"entity": "attribute", "value": "suggest diagnosis"} of [Hormonal imbalance]{"entity": "disease"}
+    - what would be your [diagnosis]{"entity": "attribute", "value": "suggest diagnosis"} of [breast cancer]{"entity": "disease"}
+    - please [diagnose]{"entity": "attribute", "value": "suggest diagnosis"} [Common cold]{"entity": "disease"}
+    - what is a [diagnosis]{"entity": "attribute", "value": "suggest diagnosis"} of [Asthama]{"entity": "disease"}
+    - can you [diagnose]{"entity": "attribute", "value": "suggest diagnosis"} [Bipolar disorder]{"entity": "disease"}
+    - what would be your [diagnosis]{"entity": "attribute", "value": "suggest diagnosis"} of [Lactose intolerance]{"entity": "disease"}
+    - please [diagnose]{"entity": "attribute", "value": "suggest diagnosis"} [Thyroid]{"entity": "disease"}
+    - what can [this diesase]{"entity": "mention"} [lead to]{"entity": "attribute", "value": "leads to"}?
+    - what can [this]{"entity": "mention"} [lead to]{"entity": "attribute", "value": "leads to"}?
+    - what can [Diabetes]{"entity": "disease"} [lead to]{"entity": "attribute", "value": "leads to"}?
+    - suggest what [Depression]{"entity": "disease"} can [lead to]{"entity": "attribute", "value": "leads to"}
+    - Can you tell me what [Schizophrenia]{"entity": "disease"} can [lead to]{"entity": "attribute", "value": "leads to"}
+    - Can you tell what [Anxiety]{"entity": "disease"} can [cause]{"entity": "attribute", "value": "leads to"}
+    - what can [Acne]{"entity": "disease"} [lead to]{"entity": "attribute", "value": "leads to"}?
+    - what can [PCOD]{"entity": "disease"} [lead to]{"entity": "attribute", "value": "leads to"}?
+    - suggest what [Hormonal imbalance]{"entity": "disease"} can [lead to]{"entity": "attribute", "value": "leads to"}
+    - Can you tell me what [Common cold]{"entity": "disease"} can [lead to]{"entity": "attribute", "value": "leads to"}
+    - Can you tell what [Asthama]{"entity": "disease"} can [cause]{"entity": "attribute", "value": "leads to"}
+    - what can [Bipolar disorder]{"entity": "disease"} [lead to]{"entity": "attribute", "value": "leads to"}?
+    - suggest what [Lactose intolerance]{"entity": "disease"} can [lead to]{"entity": "attribute", "value": "leads to"}
+    - Can you tell me what [Thyroid]{"entity": "disease"} can [lead to]{"entity": "attribute", "value": "leads to"}
+    - to which [doctor]{"entity": "attribute", "value": "doctor type"} should i go for [that disease](mention)?
+    - do you know the [type of doctor]{"entity": "attribute", "value": "doctor type"} that can treat [this disease]{"entity": "mention"}?
+    - to which [doctor]{"entity": "attribute", "value": "doctor type"} should i go for [Diabetes](disease)?
+    - to which [doctor]{"entity": "attribute", "value": "doctor type"} should i go for [Dementia](disease)?
+    - Please suggest [doctor]{"entity": "attribute", "value": "doctor type"} for [Depression](disease)?
+    - do you know the [type of doctor]{"entity": "attribute", "value": "doctor type"} that can treat [Hypertension](disease)?
+    - [who can provide treatment]{"entity": "attribute", "value": "doctor type"} for [Schizophrenia](disease)?
+    - suggest a [doctor]{"entity": "attribute", "value": "doctor type"} for [Anxiety](disease)
+    - to which [doctor]{"entity": "attribute", "value": "doctor type"} should i go for [Acne](disease)?
+    - Please suggest [doctor]{"entity": "attribute", "value": "doctor type"} for [PCOD](disease)?
+    - do you know the [type of doctor]{"entity": "attribute", "value": "doctor type"} that can treat [Hormonal imbalance](disease)?
+    - [who can provide treatment]{"entity": "attribute", "value": "doctor type"} for [Common cold](disease)?
+    - suggest a [doctor]{"entity": "attribute", "value": "doctor type"} for [Asthama](disease)
+    - to which [doctor]{"entity": "attribute", "value": "doctor type"} should i go for [Bipolar disorder](disease)?
+    - do you know the [type of doctor]{"entity": "attribute", "value": "doctor type"} that can treat [Lactose intolerance]{"entity": "disease"}?
+    - to which [doctor]{"entity": "attribute", "value": "doctor type"} should i go for [Thyroid](disease)?
+    - what are the [symptoms]{"entity": "attribute", "value": "symptoms"} for [that disease]{"entity": "mention"}?
+    - what are the [symptoms]{"entity": "attribute", "value": "symptoms"} for [Diabetes]{"entity": "disease"}?
+    - what are the [symptoms]{"entity": "attribute", "value": "symptoms"} of [Depression]{"entity": "disease"}?
+    - what are the [symptoms]{"entity": "attribute", "value": "symptoms"} of [Hypertension]{"entity": "disease"}?
+    - do you know the [symptoms]{"entity": "attribute", "value": "symptoms"} of [Schizophrenia]{"entity": "disease"}?
+    - do you know the [symptoms]{"entity": "attribute", "value": "symptoms"} of [that one]{"entity": "mention"}?
+    - what are the [symptoms]{"entity": "attribute", "value": "symptoms"} of [Anxiety]{"entity": "disease"}?    
+    - what are the [symptoms]{"entity": "attribute", "value": "symptoms"} of [Acne]{"entity": "disease"}?
+    - what are the [symptoms]{"entity": "attribute", "value": "symptoms"} of [PCOD]{"entity": "disease"}?
+    - what is the [symptoms]{"entity": "attribute", "value": "symptoms"} of [Hormonal imbalance]{"entity": "disease"}?
+    - what are the [symptoms]{"entity": "attribute", "value": "symptoms"} of [Common cold]{"entity": "disease"}?    
+    - what are the [symptoms]{"entity": "attribute", "value": "symptoms"} of [Asthama]{"entity": "disease"}?
+    - what are the [symptoms]{"entity": "attribute", "value": "symptoms"} of [Bipolar disorder]{"entity": "disease"}?
+    - what is the [symptoms]{"entity": "attribute", "value": "symptoms"} of [Lactose intolerance]{"entity": "disease"}?
+    - what are the [symptoms]{"entity": "attribute", "value": "symptoms"} for [Thyroid]{"entity": "disease"}?
+    - what is the [screening]{"entity": "attribute", "value": "screening"} for [colorectal cancer]{"entity": "disease"}?
+    - what is the [screening]{"entity": "attribute", "value": "screening"} for [breast cancer]{"entity": "Breast cancer"}?
+
+
+- intent: query_knowledge_base_falls
+  examples: |
+    - I want to know about [falls](falls).
+    - I want to talk further about [falls](falls).
+    - Can you tell me further about [falls](falls)?
+    - Can you tell me further about [falling](falls)
+    - can you help me with [falls](falls)
+    - More information about [falls](falls).
+    - what is the [definition]{"entity": "attribute", "value": "definition"} of [falling](falls)
+    - how can you [define]{"entity": "attribute", "value": "definition"} [falls](falls)
+    - what is the [cause]{"entity": "attribute", "value": "cause"} of [Falls](falls)
+    - what are the [causes]{"entity": "attribute", "value": "cause"} of [falls](falls)
+    - what can [cause]{"entity": "attribute", "value": "cause"} [falls](falls)
+    - what can [cause]{"entity": "attribute", "value": "cause"} [Falling](falls)
+    - what can [cause]{"entity": "attribute", "value": "cause"} [falling](falls)
+    - how can i [avoid]{"entity": "attribute", "value": "precaution"} [falling](falls)
+    - how can i [prevent]{"entity": "attribute", "value": "precaution"} [falling](falls)
+    - what are the [precautions]{"entity": "attribute", "value": "precaution"} for [falls](falls)
+    - if i [fell](falls), to which [doctor]{"entity": "attribute", "value": "doctor type"} should i go
+    - what [doctor]{"entity": "attribute", "value": "doctor type"} can treat [falls](falls)
+    - what are the [symptoms]{"entity": "attribute", "value": "symptoms"} of [falling](falls)
+    - what is the [symptoms]{"entity": "attribute", "value": "symptoms"} of [fall](falls)?
+    - [what happens]{"entity": "attribute", "value": "symptoms"} when we [fall](falls)
+    - [what happens]{"entity": "attribute", "value": "symptoms"} when i [fall](falls)
+    - how can i [cure]{"entity": "attribute", "value": "cure"} a [fall](falls)
+    - how can i [get better]{"entity": "attribute", "value": "cure"} after [falling](falls)
+    - Tell me the [cure]{"entity": "attribute", "value": "cure"} of [fall](falls).
+    - what can [falling](falls) [lead to]{"entity": "attribute", "value": "leads to"}
+    - what can [falls](falls) [lead to]{"entity": "attribute", "value": "leads to"}
+    - what are [the dangers]{"entity": "attribute", "value": "leads to"} of [falling](falls) 
+
+- intent: query_knowledge_base_religious
+  examples: |
+    - give some quotes of [christianity](religion) of [faith]{"entity": "attribute", "value": "faith"}
+    - I want to know about [haven]("entity": "attribute", "value": "haven") in [christianity](religion).
+
+- intent: query_knowledge_base_physical
+  examples: |
+    - I want to know about [physical activity](physical activity).
+    - I want to know about [sports](physical activity).
+    - Can you tell me further about [physical activity](physical activity)?
+    - Can you tell me further about [sports](physical activity)}?
+    - can you help me with [physical activity](physical activity)
+    - can you help me with [sports](physical activity)
+    - [physical activity](physical activity)
+    - [sports](physical activity)
+    - More information about [physical activity](physical activity).
+    - More information about [sports](physical activity).
+    - I want to talk further about [physical activity](physical activity).
+    - I want to talk further about [sports](physical activity).
+    - I need help with a [physical activity](physical activity).
+    - I need help with [sports](physical activity).
+    - what are the [types]{"entity": "attribute", "value": "type"} of [physical activities](physical activity)
+    - what are the [types]{"entity": "attribute", "value": "type"} of [sports](physical activity) that i can do
+    - what [type]{"entity": "attribute", "value": "type"} of [physical activities](physical activity) are there
+    - what [types]{"entity": "attribute", "value": "type"} of [physical activities](physical activity) exist
+    - what is [endurance]{"entity": "attribute", "value": "Endurance"} [training](physical activity)
+    - how can you define [endurance]{"entity": "attribute", "value": "Endurance"} [training](physical activity)
+    - what is [strength]{"entity": "attribute", "value": "Strength"} [training](physical activity)
+    - how can you define [Strength]{"entity": "attribute", "value": "Strength"} [training](physical activity)
+    - what is [Balance]{"entity": "attribute", "value": "Balance"} [training](physical activity)
+    - how can you define [Balance]{"entity": "attribute", "value": "Balance"} [training](physical activity)
+    - what is [Flexibility]{"entity": "attribute", "value": "Flexibility"} [training](physical activity)
+    - how can you define [flexibility]{"entity": "attribute", "value": "Flexibility"} [training](physical activity)
+    - [how long]{"entity": "attribute", "value": "duration"} should i [train](physical activity) per week 
+    - [how long]{"entity": "attribute", "value": "duration"} should a person [train](physical activity) per week
+    - [how long]{"entity": "attribute", "value": "duration"} should i [train](physical activity)
+    - what should i do if i have just [started]{"entity": "attribute", "value": "start"} [working out](physical activity)
+    - what should i do if i have just [started]{"entity": "attribute", "value": "start"} doing [physical activities](physical activity)
+    - what advice do you have if i want to [start]{"entity": "attribute", "value": "start"} doing [sports](physical activity)
+    - what are the [benefits]{"entity": "attribute", "value": "Benefits"} of [physical activities](physical activity)
+    - what can i [benefit]{"entity": "attribute", "value": "Benefits"} from doing [sports](physical activity)
+    - how is [physical activities](physical activity) [useful]{"entity": "attribute", "value": "Benefits"}
+    - how can i [motivate]{"entity": "attribute", "value": "Motivation"} myself to [work out](physical activity)
+    - how can i get [motivation]{"entity": "attribute", "value": "Motivation"} to do [physical activities](physical activity)
+    - what are ways to [movitvate]{"entity": "attribute", "value": "Motivation"} myself to do [sports](physical activity) more often
+    - how to make [sports](physical activity) [more enjoyable]{"entity": "attribute", "value": "Motivation"} 
+
+############
+## Tohoku ##
+############
+# No.1
+- intent: request_exercise_video
+  examples: |
+    - I want to work out. Can you show me a workout video?
+    - I want to get some exercise. Can you send me a video of exercises?
+    - Can you show me an exercise routine? I want to start working out.
+    - I need to exercise. Can you direct me to a video of exercises?
+    - I want to start exercising. Can you provide me with a video of workouts?
+    - I'm looking to exercise. Can you recommend a video of exercises?
+    - Can you provide me with a video of physical activities? I want to exercise.
+    - I want to engage in physical activity. Can you guide me to a video of exercises?
+    - I want to get in shape. Can you share a video of exercises with me?
+    - I want to get active. Can you point me to a video of exercises?
+- intent: inform_exercise_video_type
+  examples: |
+    - Exercise video type is [stretching](exercise_video_type).
+    - The video type is [cardio](exercise_video_type).
+    - Exercise type is [yoga](exercise_video_type).
+    - Exercise video should be [strength](exercise_video_type).
+- intent: inform_exercise_video_level
+  examples: |
+    - Exercise video level is [easy](exercise_video_level).
+    - The level is [medium](exercise_video_level).
+    - Video level is [hard](exercise_video_level).
+    - Exercise video should have a level of [light](exercise_video_level).
+    - Exercise video level might be [intense](exercise_video_level).
+- intent: inform_exercise_video_time
+  examples: |
+    - Exercise video length is [short](exercise_video_time).
+    - Video length around [half an hour](exercise_video_time).
+    - Exercise length of [30 minutes](exercise_video_time).
+    - Exercise video length of about [an hour](exercise_video_time).
+    - I can exercise with a video length of [long session](exercise_video_time).
+# No.2
+- intent: inform_action_complete
+  examples: |
+    - I just watched an exercise video.
+    - I just finished watching a workout video.
+    - I just completed a video workout.
+    - I just viewed a fitness video.
+    - I just finished a training video.
+    - I just participated in a virtual exercise session.
+    - I just checked out a video of exercises.
+    - I just completed an online workout.
+    - I just finished an at-home workout video.
+    - I just watched a video on different exercises.
+    - I'm done with the exercise video.
+    - I'm done with my exercise video.
+    - I finished the exercise video.
+    - I've seen the video.
+    - I watched the video.
+    - I watched the exercise video.
+- intent: inform_exercise_feedback
+  examples: |
+    - I am tired from today's workout.
+    - Today's exercise left me feeling exhausted.
+    - I am feeling fatigued from my workout today.
+    - The workout today took a lot out of me.
+    - I am worn out from today's exercise.
+    - My muscles are sore from today's workout.
+    - Today's workout was physically demanding.
+    - I am feeling the effects of today's exercise.
+    - I am feeling drained after today's workout.
+    - Today's exercise was a lot to handle.
+    - I didn't feel tired after today's workout.
+    - Today's workout wasn't tiring for me.
+    - I didn't find today's workout to be exhausting.
+    - I didn't experience fatigue from today's workout.
+    - Today's workout wasn't too much for me.
+    - I felt energized after today's workout.
+    - Today's workout wasn't draining for me.
+    - I didn't feel worn out from today's workout.
+    - Today's workout wasn't overly demanding for me.
+    - I didn't feel fatigued after today's workout.
+- intent: inform_exercise_feedback_time
+  examples: |
+    - I found today's exercise to be quite lengthy.
+    - The workout I did today felt quite long.
+    - Today's exercise was quite a duration.
+    - I found today's workout to be quite time-consuming.
+    - The exercise I did today took quite a while.
+    - I felt like today's workout was quite prolonged.
+    - The duration of today's exercise was quite long.
+    - The workout I did today was quite a long one.
+    - I felt like today's exercise went on for quite some time.
+    - I found today's workout to be quite a long one.
+    - I thought today's exercise was short.
+    - Today's exercise felt brief to me.
+    - I found today's exercise to be relatively short.
+    - Today's workout seemed quick.
+    - My exercise session today felt relatively brief.
+    - I felt that today's exercise was on the shorter side.
+    - Today's workout felt shorter than I expected.
+    - I thought today's exercise was shorter than usual.
+    - My exercise routine today felt shorter than usual.
+    - I found today's workout to be shorter than I anticipated.
+- intent: inform_exercise_feedback_level
+  examples: |
+    - I prefer easier exercises.
+    - I would prefer easier exercises.
+    - The exercise was a little difficult for me. I would like easier exercises next time.
+    - Please show me easier exercises from next time.
+    - The exercise was very tiresome. I would like less tiring workout videos.
+    - Yes and I would like a little easier videos.
+# No.3
+- intent: remind_indoor_exercise
+  examples: |
+    - Let me know when it's time to exercise inside.
+    - It's time to exercise inside.
+    - I want to exercise inside.
+    - Exercise inside.
+    - It's time to get inside and exercise.
+    - I want to exercise indoors.
+    - I would like to exercise indoors.
+    - I'd like to exercise indoors.
+    - I need to exercise indoors.
+- intent: respond_finish_exercise_feeling_good
+  examples: |
+    - I am feeling good.
+    - I am in a good mood.
+    - I am in high spirits.
+    - I am feeling great.
+    - I am feeling fantastic.
+    - I am feeling splendid.
+    - I am feeling happy.
+    - I am feeling joyful.
+    - I am feeling content.
+    - I am feeling elated.
+    - It was fun.
+    - I had a great time.
+    - I enjoyed it.
+- intent: respond_finish_exercise_feeling_bad
+  examples: |
+    - I am feeling down.
+    - I am in a bad mood.
+    - I am feeling sad.
+    - I am feeling depressed.
+    - I am feeling low.
+    - I am feeling blue.
+    - I am feeling gloomy.
+    - I am feeling miserable.
+    - I am feeling unhappy.
+    - I am feeling dejected.
+    - I am depressed.
+    - I am sad.
+    - It was boring.
+    - I was bored.
+- intent: response_indoor_exercise_done
+  examples: |
+    - I have finished my indoor workout.
+    - I have completed my indoor exercise routine.
+    - I have finished my indoor physical activity.
+    - My indoor workout is done.
+    - I have finished my indoor training.
+    - I am done with my indoor workout session.
+    - My indoor exercise session is over.
+    - I have finished my indoor fitness routine.
+    - I have completed my indoor training session.
+    - My indoor physical activity is finished.
+# No.4
+- intent: respond_success_stories
+  examples: |
+    - I want to hear about the success stories of other seniors.
+    - I am interested in hearing about the experiences of successful older adults.
+    - I want to know about the achievements of other senior citizens.
+    - I am curious about the successes of other elderly individuals.
+    - I am keen on listening to the success stories of seniors like myself.
+    - I would like to hear about the accomplishments of other older adults.
+    - I am eager to learn about the experiences of successful seniors.
+    - I am interested in the success stories of my peers in the senior community.
+    - I want to hear about the triumphs of other older individuals.
+    - I am keen to know about the success stories of seniors in similar situations.
+- intent: respond_information_exercise
+  examples: |
+    - I want to learn about exercise.
+    - I am interested in gaining knowledge about physical activity.
+    - I am looking for information on workouts.
+    - I am keen to find out about fitness.
+    - I want to know more about exercise and its benefits.
+    - I am seeking information on physical training.
+    - I am eager to discover more about physical fitness.
+    - I am looking for resources on exercise and health.
+    - I am curious to learn about different types of physical activity.
+    - I want to educate myself about the best ways to exercise.
+    - I want to know about physical fitness.
+    - I want to know more about physical fitness
+# No.5
+- intent: request_indoor_exercise_video
+  examples: |
+    - I'd like to watch a video of exercises I can do in my room.
+    - Can you suggest a video of indoor exercises for me?
+    - I want to find a video of exercises I can do at home.
+    - Can you show me some videos of home workouts?
+    - I am looking for exercises I can do indoors, can you help?
+    - Could you recommend a video of indoor exercises for me to try?
+    - I am interested in finding a video of room exercises.
+    - Can you point me in the direction of a video of home-based exercises?
+    - I want to see a video of exercises that can be done indoors.
+    - Can you give me some recommendations for indoor exercise videos?
+# No.6
+- intent: remind_outdoor_exercise
+  examples: |
+    - It's time to exercise outside
+    - Let's go for an outdoor workout
+    - The weather is perfect for a workout outside
+    - Let's get some fresh air and exercise
+    - Time to take advantage of the great outdoors for some physical activity
+    - I'm looking forward to some outdoor physical activity
+    - Let's get some exercise in the sun
+    - It's time for an outdoor fitness session
+    - Let's enjoy some physical activity in the open air
+    - It's time to take our workout routine outside.
+- intent: inform_outdoor_exercise_weather
+  examples: |
+    - What's the weather like outside?
+    - Can you tell me about the temperature outside?
+    - Can you give me the current weather conditions outside?
+    - Can you inform me about the weather and temperature outside?
+    - Can you tell me the forecast for outside?
+    - Can you give me an update on the weather outside?
+    - What's the current temperature outside?
+    - Can you tell me if it's hot or cold outside?
+    - Can you give me information about the outdoor weather?
+    - Can you update me on the current weather and temperature conditions outside?
+- intent: inform_outdoor_exercise_course
+  examples: |
+    - Can you recommend a good walking route?
+    - Can you suggest a nice walking trail?
+    - Can you tell me about a good place for a walk?
+    - Can you give me some ideas for a walking path?
+    - Can you recommend a walking route near me?
+    - Can you suggest a good walking trail in the area?
+    - Can you recommend a peaceful place to walk?
+    - Can you tell me about a scenic walking route?
+    - Can you give me some suggestions for a walking path in the neighborhood?
+    - Can you recommend a good place for a leisurely walk?
+- intent: respond_outdoor_exercise_back
+  examples: |
+    - I am back from walk.
+    - That was a nice walk.
+    - I am done with the walk.
+    - I have finished walking.
+    - I just got back from a walk.
+    - Just back from a walk.
+    - I took a walk and came home.
+    - I took a walk and came back home.
+    - I just took a walk and came back home.
+    - I just took a walk and came home.
+    - I have returned from my walk.
+    - I am back from my walk.
+    - I have finished my walk.
+    - My walk is done.
+    - I have completed my walk.
+    - I have returned from my stroll.
+    - I am back from my stroll.
+    - I have finished my stroll.
+    - My stroll is done.
+    - I have completed my stroll.
+- intent: respond_want_outdoor_exercise
+  examples: |
+    - I want to go for a walk.
+    - I feel like taking a walk.
+    - I am in the mood for a walk.
+    - I want to take a stroll.
+    - I would like to go for a walk outside.
+    - I am thinking about going for a walk.
+    - I feel like going for a walk in the fresh air.
+    - I am considering going for a walk around the neighborhood.
+    - I am interested in going for a walk in nature.
+    - I am planning to take a walk to get some exercise.
+# No.7
+# No.8
+- intent: respond_outdoor_exercise_fun
+  examples: |
+    - I enjoyed my outdoor workout.
+    - Exercising outside was a pleasure.
+    - I had a great time working out outside.
+    - Outdoor exercise was a lot of fun for me.
+    - My outdoor workout was a blast.
+    - I found exercising outside to be quite enjoyable.
+    - I loved my outdoor workout session.
+    - I had a great time during my outdoor exercise.
+    - I found my outdoor workout to be very satisfying.
+    - I had a lot of fun doing my workout outside.
+    - Exercise was fun.
+    - I enjoyed the exercise.
+    - The exercise was fun.
+    - I like exercise.
+    - I love to exercise.
+- intent: respond_want_indoor_exercise
+  examples: |
+    - I want to do some exercise in my room.
+    - I feel like working out in my room.
+    - I am in the mood for a room workout.
+    - I want to do some indoor physical activity.
+    - I would like to exercise in the comfort of my room.
+    - I am thinking about doing a room workout.
+    - I feel like doing a home workout in my room.
+    - I am considering doing some bodyweight exercises in my room.
+    - I am interested in doing a yoga session in my room.
+    - I am planning to do a room workout to stay fit.
+- intent: respond_outdoor_exercise_not_fun
+  examples: |
+    - I didn't enjoy my outdoor workout.
+    - My outdoor exercise was not fun.
+    - I found my outdoor workout to be unenjoyable.
+    - Outdoor exercise was not my cup of tea.
+    - I wasn't a fan of my outdoor workout.
+    - My outdoor workout was not a pleasant experience.
+    - I was not thrilled with my outdoor exercise.
+    - Outdoor workout was not enjoyable for me.
+    - I didn't have a good time during my outdoor workout.
+    - My outdoor workout was not something I enjoyed.
+    - Exercising outside was not fun.
+    - I didn't enjoy exercising outside.
+    - Exercise outside was not fun.
+    - I don't like to exercise.
+    - Not a fan of exercise.
+- intent: respond_outdoor_exercise_distance
+  examples: |
+   - I walked 1 km today.
+   - I went for a 1 km walk today.
+   - Today, I took a 1 km walk.
+   - I covered 1 km on foot today.
+   - I had a 1 km walk today.
+   - Today, I got in a 1 km walk.
+   - I completed a 1 km walk today.
+   - I went for a 1 km stroll today.
+   - Today, I took a 1 km stroll.
+   - I went on a 1 km walk today.
+
+- intent: respond_outdoor_exercise_workout_time
+  examples: |
+    - It shows 20 minutes.
+    - 20 minutes.
+    - Exactly 20 minutes.
+    - It was for 20 mins.
+    - My smartwatch tells 20 mins.
+    - Around 20 minutes.
+    - I walked for half an hour.
+    - I walked for 30 minutes.
+
+- intent: respond_outdoor_exercise_time
+  examples: |
+    - Around 7:00 AM.
+    - In the morning, at 7.
+    - 7:00
+    - At 07.00
+    - At 7 AM
+    - I went for a walk at 7 in the morning.
+
+# No.9
+- intent: request_exercise_trackecd_time
+  examples: |
+    - Please tell me how much I exercised last week.
+    - How much have I worked out last week?
+    - How long have I exercised for last week?
+    - Can you please tell me how long have I worked out for last week?
+    - How many hours have I worked out for, last week?
+    - Tell me the number of hours I have exercised last week.
+    - How much exercise did I do?
+    - How much exercise did I get?
+    - How much exercise have I done?
+- intent: request_exercise_trackecd_data
+  examples: |
+    - What exercise did I do last week?
+    - What did I do last week?
+    - Thank you. Can you please tell me my work out routine for last week.
+    - Tell me the exercise routine for last week.
+    - What exercises did I do last week?
+    - What was my exercise schedule for last week?
+# No.10
+- intent: request_exercise_video_shoulders
+  examples: |
+    - My shoulders are stiff.
+    - My shoulders are rigid.
+    - I think my shoulder are really stiff today.
+    - I have done a lot of work today. My shoulders are stiff now.
+    - I have a slight stiffness in my shoulders.
+    - My shoulders feel heavy.
+
+- intent: respond_choose_indoor_exercise_video
+  examples: |
+    - I have picked an exercise video.
+    - I have selected a workout video.
+    - I have chosen a fitness video.
+    - I have decided on an exercise clip.
+    - I have opted for a workout video.
+    - I have gone with a fitness video.
+    - I have selected an exercise video to watch.
+    - I have picked a workout video to follow.
+    - I have chosen a fitness video to view.
+    - I have decided on a workout clip to play.
+
+- intent: respond_ready_smartphone
+  examples: |
+    - I have my smartphone ready.
+    - I've prepared my phone.
+    - My phone is all set.
+    - I'm ready to go with my smartphone.
+    - My smartphone is prepped and ready.
+    - The phone is ready for action.
+    - I've got my phone ready.
+    - My smartphone is all prepared.
+    - I've made preparations for my phone.
+    - I have my phone ready for use.
+
+- intent: respond_upload_picture
+  examples: |
+    - I uploaded a photo to my smartphone
+    - I transferred a photo to my phone
+    - I put a photo on my mobile device
+    - I saved a photo to my cellular phone
+    - I added a photo to my mobile phone
+    - I stored a photo on my smartphone
+    - I transferred a picture to my phone
+    - I saved an image to my mobile device
+    - I put a picture on my cellular phone
+    - I uploaded an image to my smartphone
+
+# No.11
+- intent: request_how_many_steps_walked
+  examples: |
+    - How many steps did I take today?
+    - Can you tell me how many steps I walked today?
+    - What's my step count for today?
+    - Could you inform me of how many steps I have walked today?
+    - I'm curious, how many steps did I take today?
+    - What is my step tally for today?
+    - Do you know how many steps I've walked today?
+    - What's the count of my steps for today?
+    - Can you tell me the number of steps I've taken today?
+    - How many steps have I walked today
+
+# No.12
+- intent: remind_time_stand
+  examples: |
+    - I have been sitting for over an hour now.
+    - I've been sedentary for more than an hour.
+    - I haven't moved from my seat for an hour or more.
+    - I've been sitting still for over an hour.
+    - I've been sitting in the same place for more than an hour.
+    - I haven't gotten up from my chair for over an hour.
+    - I've been stationary for more than an hour.
+    - I've been sitting idle for over an hour.
+    - I've been sitting without moving for more than an hour.
+    - I've been sitting for an hour or more without any physical activity.
+
+# No.13
+- intent: remind_move
+  examples: |
+    - I haven't been exercising.
+    - I haven't worked out.
+    - I haven't been active.
+    - I haven't been getting any exercise.
+    - I've been sedentary.
+    - I've been inactive.
+    - I haven't been moving my body.
+    - I've been a couch potato.
+    - I haven't been physically active.
+    - I've been neglecting my exercise.
+
+- intent: respond_want_not_move
+  examples: |
+    - I don't feel like exercising.
+    - I'm not in the mood for exercise.
+    - I'm not interested in exercising.
+    - I'm not up for exercising.
+    - I don't want to exercise.
+    - I'm not feeling motivated to exercise.
+    - I'm not keen on exercising.
+    - I'm not inclined to exercise.
+    - I'm not feeling like getting active.
+    - I'm not feeling like working out.
+
+############
+  ## Abrar story(14 & 15) ##
+############
+- intent: weight_issue
+  examples: |
+    - I feel like I've been gaining weight lately.
+    - I feel I have put on some weight.
+    - I have put on some weight recently.
+    - I feel a little heavier these days.
+    - I feel I have put on some kilos recently.
+    - I think I have gained weight.
+    - i think my weight has been increased.
+    - i increased weight.
+    - weight is increased.
+    - i look little fat.
+    - i feel overweight.
+    - i am fat .
+    - i am overweight.
+    - i guess i have increased weight.
+    - my weight is increased.
+    - since last year my weight has been increased .
+    - since last month my weight is increasing .
+    - my weight is continously increasing.
+    - growing fatter
+    - my body size is increasing
+    - becoming rounder
+    - becoming fatter
+    - swelling out 
+    - i am looking fluffy
+    - i feel malnutritioned
+    - heavy is how i feel right now 
+    - i guess i am losing weight 
+    - i am becoming thin 
+    - i am slimming down 
+    - i look skinny 
+    - i lost my shape 
+    - i feeel underweight
+
+- intent : weight_measure
+  examples: |
+    - my weight is [61.54](wgtkg) 
+    - I am [78.0](wgtkg) KG 
+    - the weight is [55.68](wgtkg) 
+    - I am about [77.50](wgtkg) kilograms
+    - currently I am [86.71](wgtkg) kgs
+    - I guess I am [110.52](wgtkg) kgs
+    - [77.40](wgtkg)
+    - [89.65](wgtkg)
+    - [68.75](wgtkg)
+    - [91.22](wgtkg)
+    - [59.78](wgtkg)
+    - [93.30](wgtkg)
+    - [105.23](wgtkg)
+    - [48.10](wgtkg)
+    - [59.47](wgtkg)
+    - [62.78](wgtkg)
+    - [34.80](wgtkg)
+    - [25.92](wgtkg)
+    - [15.46](wgtkg)
+    - [05.61](wgtkg)
+    - [40.29](wgtkg)
+    - [46.11](wgtkg)
+    - [108.51](wgtkg)
+    - [113.54](wgtkg)
+    - [117.78](wgtkg)
+    - [124.32](wgtkg)
+    - [111.16](wgtkg)
+    - [102.30](wgtkg)
+    - [125.19](wgtkg)
+    - [116.08](wgtkg)
+    - [119.09](wgtkg)
+
+- intent : height_measure
+  examples: |
+    - My height is [1.5](HEIGHT) meters
+    - my height in meters is [1.53](HEIGHT)
+    - i am [1.57](HEIGHT) meters tall    
+    - i am around [1.6](HEIGHT) meters in height
+    - it is [1.63](HEIGHT) meters
+    - my height is [1.9](HEIGHT) meters
+    - [1.67](HEIGHT)
+    - [1.7](HEIGHT)
+    - [1.73](HEIGHT)
+    - [1.77](HEIGHT)
+    - [1.8](HEIGHT)
+    - [1.83](HEIGHT)
+    - [1.87](HEIGHT)
+    - [1.9](HEIGHT)
+    - [1.93](HEIGHT)
+    - [1.97](HEIGHT)
+    - [2.0](HEIGHT)
+    - [2.1](HEIGHT)
+    - [2.13](HEIGHT)
+    - [2.17](HEIGHT)
+    - [2.2](HEIGHT)
+    - [2.27](HEIGHT)
+    - [2.3](HEIGHT)
+    - [2.4](HEIGHT)
+    - [2.5](HEIGHT)
+    
+- intent : feeling_overweight
+  examples: |
+    - I feel my waist has enlarged a little.
+    - My pants feel tight on my waist.
+    - My pants are tight now.
+    - I feel larged around my belly.
+    - My clothes feel a little tighter around my waist.
+    - I feel like I have a belly. The waist of my pants is tight.
+    - my shirst is getting tighter.
+    - the clothes are not fitting.
+    - normal size shirt and t-shirst are not fitting any more
+    - i feel swelling around the neck area.
+    - my belly is looks bigger
+    - i feel more weight
+    - it feels heavy
+- intent : age
+  examples : |
+    - I am [15](MYAGE) years old
+    - my age is [18](MYAGE) years
+    - i  am [26](MYAGE) years
+    - i will be [54](MYAGE) years in near future
+    - i am of [33](MYAGE) years old
+    - i am old about [29](MYAGE) years
+    - [61](MYAGE)
+    - [82](MYAGE)
+    - [102](MYAGE)
+    - [77](MYAGE)
+    - [28](MYAGE)
+    - [33](MYAGE)
+    - [21](MYAGE)
+    - [19](MYAGE)
+    - [46](MYAGE)
+    - [9](MYAGE)
+    - [5](MYAGE)
+    - [7](MYAGE)
+- intent : my_gender 
+  examples : |
+    - I am [male](GENDER)
+    - I am [female](GENDER)
+    - My gender is [male](GENDER)
+    - My gender is [female](GENDER)
+    - [male](GENDER)
+    - [famale](GENDER)
+- intent : have_not_done_excercises
+  examples: |
+    - I have not done anything.
+    - Not yet.
+    - I have not done anything yet.
+    - I haven't work out today.
+    - I did not do any exercise today. 
+- intent : other_exercise_than_walking
+  examples: |
+    - not posible
+    - i can not do it now
+    - i do not have time now
+    - i do not feel doing it right now
+    - i will do it later
+    - i am feeling lazy 
+    - i do not have the desire to do it now
+    - i do not like to go for a walk 
+    - can i do some other excercise
+    - any indoor exercises
+    - it is slippery outside
+    - it is very cold outside
+- intent : level_of_activeness
+  examples : |
+    - [a](ACTIVELEVEL)
+    - [b](ACTIVELEVEL)
+    - [c](ACTIVELEVEL)
+    - [d](ACTIVELEVEL)
+    - [e](ACTIVELEVEL)
+############
+  ## Abrar story(16 to 17) ##
+############
+- intent : fall_prevention
+  examples: |
+    - When I walk these days, I am afraid of getting caught on small steps and falling.
+    - I feel like falling down recently.
+    - I'm afraid I'm going to fall down.
+    - I have pinched a lot lately.
+    - I trip on a small step and almost fall down.
+    - I often trip when I walk.
+    - I feel that i may fall during walking.
+    - I am nervous while walking due to fear of falling
+    - i have a fear of falling
+    - i fear that i may fall 
+    - I've been tripping a lot lately.
+    - I often pinch myself when I walk.
+    - Sometimes I am afraid of falling down.
+    - These days I feel like I might trip on something small.
+    - I am scared of falling, while I am walking outside.
+    - I am scared that I might trip and fall when I am walking.
+    - I think I might fall when I am out for a walk.
+- intent : precaution_falling
+  examples : |
+    - Apart from strength training, is there anything else I can do to avoid falling?
+    - anything important to care of apart from training exercise.
+    - any suggestion on wearing type of clothes or shoes ?
+    - what should i wear during walking ?
+    - tell me something which helps me to walk freely without fear of falling
+    - What else can I do?
+    - Do you have any other recommendations?
+    - What can I do apart from strength training?
+    - Can I try something else too?
+- intent : improve_leg_muscle
+  examples : |
+    - how can i improve my leg muscles ?
+    - what are the ways to gain strenght in leg muscles ?
+    - do you have any suggestions on how to do leg workouts 
+    - how can i improve my leg muscles at home ?
+    - can you please tell me some leg workouts 
+    - how do i do leg workouts at home 
+    - i am old tell me some leg exercise 
+    - can you guide me to leg exercise 
+- intent : shoe_guide
+  examples : |
+    - can you recommend me some good shoes 
+    - where can i get the shoes 
+    - what kind of shoes should i buy 
+    - can you give me some tips to buy the shoes
+    - suggest me some shoes 
+
+
+
+
+
+
+
+
+
+
+
+- lookup: disease
+  examples: |
+    - Diabetes
+    - PCOD
+    - Anxiety
+    - Depression
+    - Common cold
+    - Hypertension
+    - Schizophrenia
+    - Thyroid
+    - Acne
+    - Hormonal imbalance
+    - Asthama
+    - Bipolar disorder
+    - Lactose intolerance
+    - Urinary incontinence or loss of bladder control
+    - Sarcopenia
+    - Overweight and obesity
+    - Loneliness/Social inactivity
+    - Heart disease
+    - Dementia
+
+- synonym: disease
+  examples: |
+    - illness
+    - sickness
+
+- synonym: Dementia
+  examples: |
+    - damentia
+
+- synonym: Diabetes
+  examples: |
+    - Diabetes mellitus
+
+- synonym: Urinary incontinence or loss of bladder control
+  examples: |
+    - Urinary problem
+    - bladder problem
+    - urinary infection
+    - bladder infection
+
+- synonym: Loneliness/Social inactivity
+  examples: |
+    - Loneliness
+    - Social inactivity
+
+- synonym: Heart disease
+  examples: |
+    - Heart problem
+    - high heart rate
+    - low heart rate
+
+- synonym: PCOD
+  examples: |
+    - Polycystic Ovarian Disease
+    - polycystic ovary syndrome
+    - pcos
+
+- synonym: Anxiety
+  examples: |
+    - anxiety disorder
+
+- synonym: Common cold
+  examples: |
+    - colds
+    - cold
+    - flu
+
+- synonym: Hypertension
+  examples: |
+    - high blood pressure
+    - Elevated blood pressure
+
+- synonym: Schizophrenia
+  examples: |
+    - Schizophrenia
+
+- synonym: Sarcopenia
+  examples: |
+    - sarcopenia
+
+- synonym: Thyroid
+  examples: |
+    - Thyroid Gland
+
+- synonym: Asthama
+  examples: |
+    - Asthma
+
+- synonym: fall
+  examples: |
+    - falls
+    - falling
+
+- synonym: physical activity
+  examples: |
+    - movement
+    - sports
+    - exercise
+    - physical activities
+    - training
+
+- synonym: definition
+  examples: |
+    - define
+    - answer
+    - explain
+    - explaination
+    - interpretation
+    - interpretate
+    - translation
+    - translate
+    - clarification
+    - clarify
+    - comment
+- synonym: language
+  examples: |
+    - Eng
+    - DE
+    - Deutsche
+    - Francosish
+    - Italianish
+    - JP
+
+- synonym: doctor type
+  examples: |
+    - doctor
+    - medical person
+    - examination
+    - expert
+    - specialist
+    - medic
+    - medico
+    - medical person
+    - visit
+    - consult
+    - consultation
+    - treat
+    - treatment 
+
+- synonym: precaution
+  examples: |
+    - prevent
+    - prevention
+
+
+- synonym: cure
+  examples: |
+    - drug
+    - medicine
+    - help
+    - aid
+
+
+- synonym: leads to
+  examples: |
+    - severe condtion
+    - outcome
+    - lead
+    - give rise to
+    - advancement
+    - next stage
+    - worse situation
+
+
+- synonym: cause
+  examples: |
+    - caused
+    - side effects
+    - cause of
+    

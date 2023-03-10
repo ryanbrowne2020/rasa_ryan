@@ -1,0 +1,546 @@
+version: "3.1"
+
+stories:
+- story: TOP12
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: mood_great
+  steps:
+  - intent: mood_great
+  - action: utter_open
+
+- story: mood_unhappy
+  steps:
+  - intent: mood_unhappy
+  - action: utter_open
+
+- story: TOP01
+  steps:
+  - intent: greet
+  - action: check_criteria
+  - action: custom_response_story_TOP01
+
+- story: TOP02
+  steps:
+  - intent: request_different_suggestion
+  - action: check_criteria
+  - action: custom_response_story_TOP02
+
+- story: TOP03
+  steps:
+  - intent: learn_more_general
+  - action: check_criteria
+  - action: custom_response_story_TOP03
+
+- story: TOP04
+  steps:
+  - intent: request_specifics 
+  - action: check_criteria
+  - action: custom_response_story_TOP04
+
+- story: TOP05
+  steps:
+  - intent: inform_lack_domain_interest
+  - action: check_criteria
+  - action: custom_response_story_TOP05
+
+- story: TOP06
+  steps:
+  - intent: inform_plan
+  - action: check_criteria
+  - action: custom_response_story_TOP06
+
+#this story is used in place of a 'trigger' for coaching. note: custom action is called different name
+- story: TOP07
+  steps:
+  - intent: greet_robot
+  - action: check_criteria
+  - action: greet_robot_action
+
+- story: TOP08
+  steps:
+  - intent: request_functionalities
+  - action: check_criteria
+  - action: custom_response_story_TOP08
+
+- story: TOP09
+  steps:
+  - intent: goodbye
+  - action: check_criteria
+  - action: custom_response_story_TOP09
+
+- story: TOP10
+  steps:
+  - intent: mood_great
+  - action: check_criteria
+  - action: custom_response_story_TOP10
+
+- story: TOP11
+  steps:
+  - intent: mood_unhappy
+  - action: check_criteria
+  - action: custom_response_story_TOP11
+
+
+- story: TOP13
+  steps:
+  - intent: request_coaching_levels
+  - action: check_criteria
+  - action: custom_response_story_TOP13
+
+- story: TOP14
+  steps:
+  - intent: request_rephrase
+  - action: check_criteria
+  - action: custom_response_story_TOP14
+
+### Local stories
+ 
+- story: LOC01
+  steps:
+  - intent: desire_activity
+  - action: check_criteria
+  - action: custom_response_story_LOC01
+
+- story: LOC02
+  steps:
+  - intent: inform_visit_children
+  - action: check_criteria
+  - action: custom_response_story_LOC02
+
+- story: LOC03
+  steps:
+  - intent: inform_family_children
+  - action: check_criteria
+  - action: custom_response_story_LOC03
+
+- story: LOC04
+  steps:
+  - intent: inform_missing
+  - action: check_criteria
+  - action: custom_response_story_LOC04
+
+- story: LOC05
+  steps:
+  - intent: inform_rememberance
+  - action: check_criteria
+  - action: custom_response_story_LOC05
+
+- story: LOC06
+  steps:
+  - intent: request_trash_info
+  - action: check_criteria
+  - action: custom_response_story_LOC06
+
+- story: LOC07
+  steps:
+  - intent: inform_errands
+  - action: check_criteria
+  - action: custom_response_story_LOC07
+
+- story: LOC08
+  steps:
+  - intent: altruism
+  - action: check_criteria
+  - action: custom_response_story_LOC08
+
+- story: LOC09
+  steps:
+  - intent: sustainability
+  - action: check_criteria
+  - action: custom_response_story_LOC09
+
+### Social stories
+
+- story: SOC01
+  steps:
+  - intent: inform_volunteer
+  - action: check_criteria
+  - action: custom_response_story_SOC01
+
+- story: SOC02
+  steps:
+  - intent: inform_desire_volunteer_work
+  - action: check_criteria
+  - action: custom_response_story_SOC02
+
+- story: SOC03
+  steps:
+  - intent: inform_hobby
+  - action: check_criteria
+  - action: custom_response_story_SOC03
+
+- story: SOC04
+  steps:
+  - intent: request_local_events
+  - action: check_criteria
+  - action: custom_response_story_SOC04
+
+- story: SOC05
+  steps:
+  - intent: inform_free_time
+  - action: check_criteria
+  - action: custom_response_story_SOC05
+
+- story: SOC06
+  steps:
+  - intent: request_new_contact
+  - action: check_criteria
+  - action: custom_response_story_SOC06
+
+- story: SOC07
+  steps:
+  - intent: request_set_reminder
+  - action: check_criteria
+  - action: custom_response_story_SOC07
+
+- story: SOC08
+  steps:
+  - intent: inform_future_activity
+  - action: check_criteria
+  - action: custom_response_story_SOC08
+
+- story: SOC09
+  steps:
+  - intent: inform_habits
+  - action: check_criteria
+  - action: custom_response_story_SOC09
+
+- story: SOC10
+  steps:
+  - intent: request_social_advice
+  - action: check_criteria
+  - action: custom_response_story_SOC10
+
+- story: SOC11
+  steps:
+  - intent: request_social_benefits
+  - action: check_criteria
+  - action: custom_response_story_SOC11
+
+- story: SOC12
+  steps:
+  - intent: request_hobby_advice
+  - action: check_criteria
+  - action: custom_response_story_SOC12
+
+- story: SOC13
+  steps:
+  - intent: inform_social_no
+  - action: check_criteria
+  - action: custom_response_story_SOC13
+
+### Spiritual 
+- story: SP01
+  steps:
+  - intent: inform_spiritual_activity
+  - action: check_criteria
+  - action: custom_response_story_SP01
+
+
+### Cognitive 
+
+- story: COG01
+  steps:
+  - intent: inform_want_play_braintraining_game
+  - action: check_criteria
+  - action: custom_response_story_COG01
+
+- story: COG02
+  steps:
+  - intent: inform_use_tablet
+  - action: check_criteria
+  - action: custom_response_story_COG02
+
+- story: COG03
+  steps:
+  - intent: inform_finished_braintraining
+  - action: check_criteria
+  - action: custom_response_story_COG03
+
+- story: COG04
+  steps:
+  - intent: learn_cognitive
+  - action: check_criteria
+  - action: custom_response_story_COG04
+
+- story: COG05
+  steps:
+  - intent: learn_cognitive_more
+  - action: check_criteria
+  - action: custom_response_story_COG05
+
+- story: COG06
+  steps:
+  - intent: cognitive_question
+  - action: check_criteria
+  - action: custom_response_story_COG06
+
+- story: COG07
+  steps:
+  - intent: inform_brain_issue
+  - action: check_criteria
+  - action: custom_response_story_COG07
+
+- story: COG08
+  steps:
+  - intent: request_stress_advice
+  - action: check_criteria
+  - action: custom_response_story_COG08
+
+- story: COG09
+  steps:
+  - intent: request_cognitive_intervention
+  - action: check_criteria
+  - action: custom_response_story_COG09
+
+- story: COG10
+  steps:
+  - intent: cognitive_supplements
+  - action: check_criteria
+  - action: custom_response_story_COG10
+
+### Chit-chat
+
+- story: CC01
+  steps:
+  - intent: inform_pets
+  - action: check_criteria
+  - action: custom_response_story_CC01
+
+- story: CC02
+  steps:
+  - intent: inform_filmsTV
+  - action: check_criteria
+  - action: custom_response_story_CC02
+
+- story: CC03
+  steps:
+  - intent: inform_travel_plan
+  - action: check_criteria
+  - action: custom_response_story_CC03
+
+- story: CC04
+  steps:
+  - intent: inform_recent_events
+  - action: check_criteria
+  - action: custom_response_story_CC04
+
+### Exercise 
+
+- story: EX01
+  steps:
+  - intent: inform_exercise_feedback
+  - action: check_criteria
+  - action: custom_response_story_EX01
+
+- story: EX02
+  steps:
+  - intent: inform_exercise_outside
+  - action: check_criteria
+  - action: custom_response_story_EX02
+
+- story: EX03
+  steps:
+  - intent: request_exercise_info
+  - action: check_criteria
+  - action: custom_response_story_EX03
+
+- story: EX04
+  steps:
+  - intent: request_current_exercise_info
+  - action: check_criteria
+  - action: custom_response_story_EX04
+
+- story: EX05
+  steps:
+  - intent: open_exercise_response_positive
+  - action: check_criteria
+  - action: custom_response_story_EX05
+
+- story: EX06
+  steps:
+  - intent: open_exercise_response_negative
+  - action: check_criteria
+  - action: custom_response_story_EX06
+
+- story: EX07
+  steps:
+  - intent: open_exercise_response_neutral
+  - action: check_criteria
+  - action: custom_response_story_EX07
+
+- story: EX08
+  steps:
+  - intent: request_exercise_advice
+  - action: check_criteria
+  - action: custom_response_story_EX08
+
+- story: EX09
+  steps:
+  - intent: request_exercise_freq
+  - action: check_criteria
+  - action: custom_response_story_EX09
+
+- story: EX10
+  steps:
+  - intent: mobility
+  - action: check_criteria
+  - action: custom_response_story_EX10
+
+### Sleep
+- story: SL01
+  steps:
+  - intent: inform_positive_sleep
+  - action: check_criteria
+  - action: custom_response_story_SL01
+
+- story: SL02
+  steps:
+  - intent: inform_negative_sleep
+  - action: check_criteria
+  - action: custom_response_story_SL02
+
+- story: SL03
+  steps:
+  - intent: request_sleep_quantity
+  - action: check_criteria
+  - action: custom_response_story_SL03
+
+- story: SL04
+  steps:
+  - intent: request_personalized_sleep_quantity
+  - action: check_criteria
+  - action: custom_response_story_SL04
+
+- story: SL05
+  steps:
+  - intent: request_sleep_advice
+  - action: check_criteria
+  - action: custom_response_story_SL05
+
+- story: SL06
+  steps:
+  - intent: nutrition_for_sleep
+  - action: check_criteria
+  - action: custom_response_story_SL06
+
+- story: SL07
+  steps:
+  - intent: sleep_routine
+  - action: check_criteria
+  - action: custom_response_story_SL07
+
+- story: SL08
+  steps:
+  - intent: sleep_relax
+  - action: check_criteria
+  - action: custom_response_story_SL08
+
+- story: SL09
+  steps:
+  - intent: fall_asleep
+  - action: check_criteria
+  - action: custom_response_story_SL09
+
+
+### Nutrition
+
+- story: NU01
+  steps:
+  - intent: request_mealplan
+  - action: check_criteria
+  - action: custom_response_story_NU01
+
+- story: NU02
+  steps:
+  - intent: request_diet_advice
+  - action: check_criteria
+  - action: custom_response_story_NU02
+
+- story: NU03
+  steps:
+  - intent: request_specific_food_advice_meat
+  - action: check_criteria
+  - action: custom_response_story_NU03
+
+- story: NU04
+  steps:
+  - intent: request_recipe
+  - action: check_criteria
+  - action: custom_response_story_NU04
+
+- story: NU05
+  steps:
+  - intent: request_healthy_snack
+  - action: check_criteria
+  - action: custom_response_story_NU05
+
+- story: NU06
+  steps:
+  - intent: request_specific_food_advice_fruitveg
+  - action: check_criteria
+  - action: custom_response_story_NU06
+
+- story: NU07
+  steps:
+  - intent: request_dining_advice
+  - action: check_criteria
+  - action: custom_response_story_NU07
+
+- story: NU08
+  steps:
+  - intent: supplements_vitamins
+  - action: check_criteria
+  - action: custom_response_story_NU08
+
+### General Health
+- story: GH01
+  steps:
+  - intent: request_general_health_response
+  - action: check_criteria
+  - action: custom_response_story_GH01
+
+- story: GH02
+  steps:
+  - intent: request_health_info
+  - action: check_criteria
+  - action: custom_response_story_GH02
+
+- story: GH03
+  steps:
+  - intent: under_the_weather
+  - action: check_criteria
+  - action: custom_response_story_GH03
+
+- story: GH04
+  steps:
+  - intent: take_it_easy
+  - action: check_criteria
+  - action: custom_response_story_GH04
+
+- story: GH05
+  steps:
+  - intent: request_smoking_advice 
+  - action: check_criteria
+  - action: custom_response_story_GH05
+
+- story: GH06
+  steps:
+  - intent: request_weight_advice
+  - action: check_criteria
+  - action: custom_response_story_GH06
+
+- story: GH07
+  steps:
+  - intent: social_emotional_wellbeing
+  - action: check_criteria
+  - action: custom_response_story_GH07
+
+- story: GH08
+  steps:
+  - intent: normal_check
+  - action: check_criteria
+  - action: custom_response_story_GH08

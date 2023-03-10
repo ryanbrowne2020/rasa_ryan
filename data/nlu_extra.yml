@@ -1,0 +1,688 @@
+version: "3.1"
+
+## ORDER:
+# Domain: Cognitive
+# Domain: Social
+# Domain: Spiritual
+# Chit-chat
+# Domain: Sleep
+# Domain: Exercise
+# Domain: Nutrition
+# General Health
+
+# added:
+#intent - youji (errands)
+
+nlu:
+## Local topics: activities, family, etc
+- intent: desire_activity
+  examples: |
+    - I would like to go for a drive
+    - I want to go for a walk
+    - I wish to go outside now
+    - I would love to do something now
+    - I really want to get in my car and go somewhere
+
+- intent: inform_visit_children
+  examples: |
+    - I'll visit my children.
+    - I'll take a trip to see my grandchildren.
+    - I'll go to see my children.
+    - I plan to go and see my gradnkids.
+
+- intent: inform_family_children
+  examples: |
+    - I have two sons.
+    - I have a daughter.
+    - My granddaughter just turned 3.
+    - My daughter just had a son.
+    - My brother lives nearby.
+    - I have a sister.
+    - I have two children.
+    - I have one child.
+
+- intent: inform_missing
+  examples: |
+    - I miss my son, he lives in Tokyo now
+    - I would like to see my mother again soon.
+    - I haven't met my friends in a while, I would like to see them.
+    - Recently, I couldn't do many activities. I miss the old days.
+    - I'm lonely. I miss my father.
+    - I'm feeling lonely. I miss my mother.
+
+- intent: inform_rememberance
+  examples: |
+    - I miss my father. He passed away last year.
+    - My mother died when I was younger.
+    - My elder brother recently passed away.
+    - My dog died this year, I miss him a lot.
+    - One of my cats passed away, it was so sad.
+
+- intent: request_trash_info
+  examples: |
+    - What day is the recycling again?
+    - When should I put out my household rubbish?
+    - When is the recycling day?
+    - What day is household waste collected?
+
+- intent: inform_errands
+  examples: |
+    - I need to go outside now
+    - I have some things to do
+    - I have some matters to take care of
+    - I'm going out later
+    - I have some things to do today
+
+- intent: altruism
+  examples: |
+    - How can I make the world a better place?
+    - How can I give back to others?
+    - What can I do for the world?
+    - How can I make a positive impact on others?
+    - How can I do good in the world?
+    - I want to help future generations
+
+- intent: sustainability
+  examples: |
+    - How can I be more sustainable?
+    - How can I be more eco-friendly?
+    - How can I recycle more?
+    - Are there any ways I can protect the earth?
+    - What can I do for climate change?
+
+## Domain: Cognitive 
+
+- intent: inform_want_play_braintraining_game
+  examples: |
+    - I want to play a game
+    - I want to play brain training
+    - I want to do cognitive games
+    - I want to train my brain
+    - I want to do brain training
+    - Can you play a game with me?
+    - Let's do some brain training together
+    - What brain training games do you have for me?
+
+- intent: inform_use_tablet
+  examples: |
+    - I'm going to play with the tablet
+    - I'll play a game on the tablet
+    - I'll use the tablet
+    - I'm going to play the ABC app
+    - I'm going to wear the NeU device
+    - I'll play the NeU game now
+
+- intent: inform_finished_braintraining
+  examples: |
+    - I just finished brain training
+    - I did my brain training
+    - I played brain training just now
+    - I completed my brain games for today
+    - I'm all done with the game
+    - I had a good brain workout
+    - I played the game for a few minutes
+    - I got a great brain score today
+
+- intent: learn_cognitive
+  examples: |
+    - Can you tell me about cognitive skills, like memory and focus?
+    - I want to learn about cognitive skills
+    - I want to improve my memory
+
+- intent: learn_cognitive_more
+  examples: |
+    - What else can I do to keep my mind sharp?
+    - Any more tips to keep my brain active?
+    - How else can I boost my memory?
+    - Anything else I can do improve my focus?
+
+- intent: cognitive_question
+  examples: |
+    - Can cognitive training reverse age-related decline?
+    - How can I reverse age-related decline?
+    - Does cognitive training have real benefits?
+    - My concern is whether cognitive training has benefits.
+    - I'm undecided whether brain training will work or not. 
+
+- intent: inform_brain_issue
+  examples: |
+    - I'm having trouble focussing.
+    - My memory is getting worse.
+    - I have trouble remembering. 
+    - I've been finding it difficult to concentrate.
+
+#check stress is not elsewhere in feedback/emotion
+- intent: request_stress_advice
+  examples: |
+    - How can I reduce stress and anxiety?
+    - I'm feeling stressed
+    - I get stressed easily
+    - I sometimes feel anxious
+    - Stress must be bad for my brain, right?
+
+#this could be combined with inform_brain_issue?
+- intent: request_cognitive_intervention
+  examples: |
+    - What should I do if I notice changes in my memory?
+    - What should I do if I notice changes in my brain function?
+    - What should I do if I notice changes in my thinking?
+    - What should I do if I think my memory is getting worse?
+
+- intent: cognitive_supplements
+  examples: |
+    - Are there any medications or supplements that can help with memory?
+    - Are there any vitamins that are good for brain function?
+    - What supplements are best for memory?
+    - Which supplements should I take to help my brain?
+    - Which supplements will boost my memory?
+    - Are there medications to help me focus?
+
+## Domain: Social 
+
+- intent: inform_volunteer
+  examples: |
+    - I love to help my neighbour who is too sick to take care of himself.
+    - I love to help out my local community.
+    - I help out around town.
+    - I help out in my local community sometimes.
+    - I try to help out in the local community once a week.
+    - I deliver food to those who need it.
+    - I work for a charity service.
+    - I'm working as a volunteer.
+    - I help clean the local area with other volunteers.
+
+- intent: inform_desire_volunteer_work
+  examples: |
+    - I want to help out in my local community.
+    - I want to give back to the community.
+    - How can I give back to my local community?
+    - I want to help those who are in need.
+    - I would like to teach people my skills.
+    - I want to join a volunteer activity.
+    - I want to start volunteering.
+
+- intent: inform_hobby
+  examples: |
+    - My hobby is painting.
+    - In my spare time, I do photography.
+    - When I have free time, I like to bake cakes.
+    - I really enjoy gardening.
+    - My hobby is watching films.
+    - When I have spare time, I like to watch a movie.
+    - I like to watch the latest movies.
+    - I love to travel around the world, and visit new places.
+    - I like trying new foods around town.
+
+- intent: request_local_events
+  examples: |
+    - What events are happening this week?
+    - What events are on next week?
+    - What's on around me?
+    - Is there anything I can do this weekend?
+    - Are there any activites happening?
+    - What shouldn't I miss this weekend?
+    - Are there any exhibitions coming up?
+    - What exhibitions are showing now?
+    - Are there any local events?
+    - Are there any concerts happening?
+    - I want to join a social event.
+    - I want to join a local club.
+
+- intent: inform_free_time
+  examples: |
+    - I have free time this weekend.
+    - I have free time tomorrow afternoon.
+    - I have nothing planned for today.
+    - I don't have any plans tomorrow.
+    - I'm totally free all day.
+    - I will have lots of time next week.
+
+- intent: request_new_contact
+  examples: |
+    - Is there someone in the social platform with the same interests as me?
+    - Who is also in the social platform?
+    - I want to make a new friend on the social platform.
+    - I want to connect with someone on the social platform.
+
+- intent: request_set_reminder
+  examples: |
+    - Remind me an hour before I have to leave today.
+    - Remind me when it's time to leave for my appointment.
+    - Set a reminder for when I need to meet my friend.
+    - Remind me in an hour.
+    - Could you remind me when I need to leave?
+    - Could you let me know when it's time?
+    - Can you let me know when I need to go?
+
+- intent: inform_future_activity
+  examples: |
+    - I have a meeting at the volunteer center next week Thursday.
+    - My daughter will visit me this week on Friday.
+    - I'll see my daughter tomorrow.
+    - My husband and I will have dinner at the weekend. 
+    - I'll go out shopping with my friend tomorrow around noon.
+    - I have a doctor's appointment tomorrow afternoon.
+
+- intent: inform_habits
+  examples: |
+    - I have an aerobics class every week on Thursday morning.
+    - I go for a walk every morning at 5am.
+    - I wake up early and go to bed early every day.
+    - I attend a tennis club every Saturday from 11am.
+
+#could maybe split into two? make new contacts, and keep existing contacts
+- intent: request_social_advice
+  examples: |
+    - What are some ways I can stay connected with others as I age?
+    - How can I keep up being social as I age?
+    - How can I maintain my social life?
+    - What are some ways to stay connected with others?
+    - Where can I find and contact new people?
+    - How can I make new connections?
+    - How can I make new friends and social connections?
+    - How can I stay connected with family and friends who live far away?
+
+- intent: request_social_benefits
+  examples: |
+    - What are the benefits of social activity for my health and well-being?
+    - What are the benefits of being social?
+    - Why is it good to take part in social events?
+    - How can taking part in events help me?
+    - Why is it recommended to go to new events?
+
+- intent: request_hobby_advice
+  examples: |
+    - How can I find new hobbies or interests to pursue?
+    - I want to start a new hobby.
+    - I don't really have any hobbies.
+    - I want to find something that interests me.
+    - I need a hobby.
+    - I stopped doing my hobby.
+
+- intent: inform_social_no
+  examples: |
+    - It's a hassle to go to new events.
+    - It's a bother to make new friends.
+    - I'm happy with my current social circle.
+    - I'm content with the friends I have.
+    - I prefer to be alone. 
+    - I don't mind being alone.
+    - I'm living an independent life.
+    - I like to do things by myself.
+    - I like to spend time by myself.
+    - Events are annoying.
+    - Other people are annoying.
+
+## Domain: Spiritual
+
+- intent: inform_spiritual_activity
+  examples: |
+    - I like to visit the Church every Saturday.
+    - I usually go to the cemetry once a month.
+    - I like to spend time at my wife's grave.
+    - I find it relaxing to visit the Shrine and say a prayer.
+    - I go to the temple at New Year's to pray for good luck.
+    - I try to go to Church every week.
+    - I go to the temple in the mornings.
+
+- intent: request_wise_words
+  examples: |
+    - Can you give me some wise words
+    - I’d like to hear some uplifting phrases
+    - Tell me something reassuring
+    - I want to hear something comforting
+    - Give me an uplifting quote
+    - Tell me a thought-provoking phrase
+    - I want to hear something deep
+    - I want to think about something profound
+
+## Chit-chat
+- intent: inform_pets
+  examples: |
+    - I have a dog.
+    - I have two dogs.
+    - I have a cat.
+    - I live with my cats.
+    - I love playing with my cats.
+    - I have an Italian greyhound.
+    - This is my golden retriever.
+    - This is my cat.
+
+- intent: inform_filmsTV
+  examples: |
+    - I watched this great film the other day.
+    - I started watching this new TV series.
+    - I often watch TV in the evenings.
+    - I try to catch the news in the mornings.
+    - I saw an interesting film on TV.
+    - I try to watch films in my spare time.
+    - I try to watch a film at the weekend.
+
+- intent: inform_travel_plan
+  examples: |
+    - I might go to Matsushima at the weekend.
+    - I'm planning to go to Paris next year.
+    - I would love to visit Africa one day.
+    - It's my dream to visit Europe.
+    - I'm going to take a trip next month.
+
+- intent: inform_recent_events
+  examples: |
+    - I just had lunch with my daughter.
+    - I just went out to the shops.
+    - I went for a walk just now.
+    - I've been doing some gardening this morning.
+    - I've been relaxing at home all day.
+    - I've been reading some books.
+    - I just watched a film and ate dinner.
+    - I did some shopping.
+    - I just got back from my walk.
+
+## Domain: Sleep
+
+- intent: inform_positive_sleep
+  examples: |
+    - I slept well last night.
+    - I was out like a light.
+    - I had a deep sleep.
+    - I had a great sleep.
+    - I had the best dreams.
+    - I slept soundly.
+    - I slept pretty well.
+
+- intent: inform_negative_sleep
+  examples: |
+    - I had a terrible sleep.
+    - I had a bad night.
+    - I woke up several times in the night.
+    - I was tossing and turning all night.
+    - I couldn't sleep a wink.
+    - I woke up quite a few times in the night.
+    - I had a scary dream.
+    - My partner snores too loud, I couldn't sleep well.
+    - I only slept lightly.
+    - I slept badly last night.
+    - I slept terribly.
+    - I slept not well at all.
+
+- intent: request_sleep_quantity
+  examples: |
+    - How much sleep should I be getting each night?
+    - What is the recommended amount to sleep?
+    - How many hours should one sleep?
+    - What is the ideal hours of sleep per night?
+
+- intent: request_personalized_sleep_quantity
+  examples: |
+    - Have I been getting enough sleep?
+    - Have I been getting too little sleep?
+    - Have I been sleeping too much?
+    - Have I been waking up in the night?
+    - Tell me my sleep quantity
+    - Tell me about my sleep quality
+    - How is my sleep?
+    - How are my sleeping patterns?
+
+- intent: request_sleep_advice
+  examples: |
+    - What can I do to improve my sleep quality?
+    - How can I get better sleep?
+    - How can I have a deeper sleep?
+    - How can I sleep longer?
+
+#there is a similar one for brain health - could combine?
+- intent: nutrition_for_sleep
+  examples: |
+    - Are there any medications or supplements that could help me sleep better?
+    - Are there any vitamins that are good for sleeping?
+    - What supplements are best for getting a good sleep?
+    - Which supplements should I take to help my sleep?
+    - Which supplements will improve my sleep?
+    - Are there medications to help me sleep easier?
+
+- intent: sleep_routine
+  examples: |
+    - How can I establish a healthy sleep routine?
+    - What is a good time to wake up?
+    - What is a good time to go to bed?
+    - What should I do before sleeping?
+    - What should I do as soon as I wake up?
+    - What is a good time to wake up and go to sleep?
+    - What is a healthy sleeping pattern?
+
+- intent: sleep_relax
+  examples: |
+    - Are there any relaxation techniques that can help me fall asleep more easily?
+    - How can I relax before bedtime?
+    - How can I unwind in the evening?
+    - I want to be more relaxed in the evening.
+
+- intent: fall_asleep
+  examples: |
+    - What should I do if I have trouble staying asleep?
+    - I have difficulty falling asleep.
+    - I often take a long time to fall asleep.
+    - It takes me quite a while to go to sleep.
+    - I usually fall asleep too late.
+
+## Domain: Exercise
+
+- intent: inform_exercise_feedback
+  examples: |
+    - The exercise just now was too hard.
+    - The video you showed me was pretty easy.
+    - My walk today was pretty tough.
+    - I got so tired during the exercise.
+    - The exercise was too simple.
+    - I want a harder one next time.
+    - I can do a little more intense exercise next time.
+
+- intent: inform_exercise_outside
+  examples: |
+    - I'm going to go for a walk outside.
+    - I'm going to walk the dogs.
+    - I'll take a walk from now.
+    - I'm going for a run.
+    - I'll take a walk around the neighbourhood.
+    - I'll go for a quick walk.
+    - I'll walk to the park and back.
+
+- intent: request_exercise_info
+  examples: |
+    - What exercise can I do to strengthen my legs?
+    - What exercises are good for my posture?
+    - What exercises are the best for losing fat?
+    - Tell me what exercise is the best for older persons?
+    - What exercise is good for the arms?
+
+- intent: request_current_exercise_info
+  examples: |
+    - How many calories did I just burn?
+    - How long have I been exercising?
+    - What's my current heart rate?
+
+- intent: open_exercise_response_positive
+  examples: |
+    - I'd say I get enough exercise 
+    - I exercise quite a lot
+    - I exercise about 3 times per week
+    - I exercise every day
+    - I do swimming every week
+
+- intent: open_exercise_response_negative
+  examples: |
+    - I don't exercise enough
+    - I don't exercise that much
+    - Not so much exercise
+    - I don't move too much
+    - I'm quite inactive
+    - My lifestyle is sedentary
+    - I have a slow pace
+
+- intent: open_exercise_response_neutral
+  examples: |
+    - I don't consciously exercise, but I walk everywhere
+    - I do gardening, that counts as exercise right?
+    - I do enough housework!
+    - I think I'm moving enough
+
+- intent: request_exercise_advice
+  examples: |
+    - What type of exercise is best for me at my age and fitness level?
+    - What kind of exercise is best for me?
+    - What type of exercise is appropriate for someone like me?
+    - What exercises are recommended for seniors?
+    - What exercises do you suggest for me?
+
+- intent: request_exercise_freq
+  examples: |
+    - How often should I exercise to maintain my health?
+    - How many times per week should I exercise?
+    - How frequently should I walk?
+    - How frequently should I move my body?
+    - How many times per week should I watch an exercise video?
+
+- intent: mobility
+  examples: |
+    - What can I do if I have joint pain?
+    - I'm in a wheelchair, what can I do?
+    - I can't bend my knees easily, what can I do?
+    - I'm not so flexible to do many exercises
+    - I can't bend down easily
+    - Exercise is difficult due to my knees
+
+## Domain: Nutrition
+
+- intent: request_mealplan
+  examples: |
+    - Can you plan my dinners for the next week?
+    - I would like some suggestions for lunches this week.
+    - What should I make for dinner this week?
+    - What should I eat today?
+    - Can you give me some meal ideas?
+    - What should I cook for dinner tomorrow?
+
+- intent: request_diet_advice
+  examples: |
+    - Do you have any advice how I can improve my diet?
+    - How can I eat healthier?
+    - What foods should I get more of?
+    - What are healthy foods?
+    - Teach me about diet
+
+- intent: request_specific_food_advice_meat
+  examples: |
+    - How frequently should I eat meat?
+    - How bad is processed red meat?
+    - How much red meat is safe?
+    - Is it bad to eat too much meat?
+    - How can I replace meat with healthier choices?
+
+- intent: request_recipe
+  examples: |
+    - Can you teach me a new recipe?
+    - I'd like a recipe
+    - What's a seasonal recipe?
+    - Tell me a healthy recipe
+
+- intent: request_healthy_snack
+  examples: |
+    - What are some healthy snack options?
+    - Any ideas for a healthy snack?
+    - I'd like a snack, but something healthy
+
+- intent: request_specific_food_advice_fruitveg
+  examples: |
+    - How can I incorporate more fruits and vegetables into my diet?
+    - I want to eat more fruits and vegetables
+    - I want to get more fruit
+    - I want to eat more vegetables in my diet
+    - How can I add more vegetables to my meals?
+
+- intent: request_dining_advice
+  examples: |
+    - How can I make healthy food choices when dining out or traveling?
+    - What are some choices I can make, to eat healthily in a restaurant?
+    - Any suggestions for healthy restaurant meals?
+
+- intent: supplements_vitamins
+  examples: |
+    - Are there any specific nutrients or supplements I should be taking?
+    - What are the recommended vitamins for seniors?
+    - What vitamins do you suggest I take?
+    - What supplements should I take?
+    - Do you have suggestions for supplements?
+    - Tell me which supplements I need.
+
+
+
+## Domain: General Health
+- intent: request_general_health_response
+  examples: |
+    - How can I improve my health?
+    - I want to get healthier
+    - I want to change my lifestyle
+    - I want to become healthier
+    - I want to live a long, healthy life
+    - I want to avoid disease
+    - Can you help me to improve my health?
+    - Will you show me how to get healthier?
+
+- intent: request_health_info
+  examples: |
+    - has my blood pressure changed since I started this diet?
+    - has my blood pressure changed since I started exercising?
+    - has my blood pressure decreased since I started this programme?
+    - Is my blood pressure high this morning?
+    - How has my weight changed recently?
+    - Has my bodyfat decreased since I started this programme?
+    - How was my body fat changed?
+    - Has my weight been decreasing?
+
+- intent: under_the_weather
+  examples: |
+    - I feel hungover
+    - I have a hangover
+    - I feel a little unwell
+    - I don't feel good 
+    - I have slight body pain
+    - I don't feel well
+
+- intent: take_it_easy
+  examples: |
+    - I'm just going to rest
+    - I'll rest for a bit
+    - I'll take a rest
+    - I think I'll take it easy
+    - I'm not going to do much
+
+- intent: request_smoking_advice
+  examples: |
+    - How can I reduce my smoking habit?
+    - I want to stop smoking. 
+    - I'd like to smoke less. 
+    - I'm worried about how much I smoke. 
+    - I know smoking is bad for me.
+
+- intent: request_weight_advice
+  examples: |
+    - How can I reach a healthy weight?
+    - I want to reduce my weight. 
+    - I want to increase my weight. 
+    - I want to be a healthy weight. 
+    - I want to lose weight. 
+
+- intent: social_emotional_wellbeing
+  examples: |
+    - How can I improve my social wellbeing?
+    - How can I improve my emotional wellbeing?
+    - About social and emotional wellbeing, what can I do?
+
+- intent: normal_check
+  examples: |
+    - Is that normal?
+    - Is that due to my age?
+    - Do others experience this?
+    - Is this a common thing?
+    - Is that widespread?
+    - Is that normal for someone my age?

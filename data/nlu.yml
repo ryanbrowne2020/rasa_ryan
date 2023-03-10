@@ -1,0 +1,303 @@
+version: "3.1"
+# useful, general-purpose ones 
+# affirm and deny are not used in stories yet
+
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hello. hello
+    - hello hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+# can use intent: OR intent: in the story to capture responses
+- intent: not_much
+  examples: |
+    - Not as much as I'd like
+    - Not so much
+    - Not often
+    - Infrequently
+    - Rarely
+    - Honestly, hardly
+    - Hardly ever
+
+- intent: quite_a_lot
+  examples: |
+    - Quite a lot
+    - Almost every day
+    - A few times per week
+    - Pretty frequently
+    - Quite often
+    - I would say fairly often
+    - A lot
+
+- intent: request_different_suggestion
+  examples: |
+    - I want a different suggestion.
+    - Tell me another one.
+    - I don't like this idea.
+    - Tell me a new suggestion.
+    - I want a different one.
+    - How about another one?
+
+- intent: learn_more_general
+  examples: |
+    - What else can I do?
+    - Any more suggestions for me?
+    - Do you have any further tips?
+    - Anything else you can add?
+    - Can you give me some examples?
+
+- intent: request_specifics
+  examples: |
+    - Are there any specific apps you recommend?
+    - Any specific training programs?
+    - Do you have more specifics?
+
+- intent: info_challenge
+  examples: |
+    - Will that actually work?
+    - Is that really effective?
+    - Has that been proven?
+    - Are you sure that's right?
+    - How do you know it will work?
+
+#could add entities
+- intent: inform_lack_domain_interest
+  examples: |
+    - I'm not really interested in brain training.
+    - I don't want to train my brain.
+    - I don't want to do cognitive training. 
+    - I'm not that interested.
+    - I don't care.
+    - I'm not bothered.
+    - I don't want to train my body.
+    - I'm not concerned about excercising. 
+    - I have no desire to work out. 
+    - I don't care about eating well.
+    - I don't find cognitive training fun
+    - I'm not interested in exercise
+    - I'm not so worried about my sleep
+    - My sleeping is no concern to me
+    - I don't think about my social life
+    - I'm not interested in social activity
+    - I'm not interested in that kind of activity
+
+- intent: inform_plan
+  examples: |
+    - I'll start by doing that. 
+    - I'll have a go.
+    - I'll try it out.
+    - I'll let you know how I get on. 
+    - I'll give it a go. 
+    - Let's see how it goes. 
+
+- intent: greet_robot
+  examples: |
+    - It's time for coaching
+    - I'd like a coaching session
+    - Coaching please
+    - Let's do some coaching
+    - How about some coaching
+    - Coaching advice
+    - Coaching time 
+
+- intent: request_rephrase
+  examples: |
+    - What do you mean?
+    - Could you rephrase that?
+    - Could you say that again?
+    - Could you give me an explanation?
+    - What does that mean?
+    - I couldn't catch what you said
+    - I don't understand the question
+
+- intent: request_functionalities
+  examples: |
+    - What can you do?
+    - How can you help me?
+    - How are you useful?
+    - What functions do you have?
+    - How will you help me?
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - yeah
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - all right
+    - Okay
+    - sure
+    - sounds good
+    - please
+    - yes please
+    - go ahead
+    - it's okay
+    - it's ok
+    - go ahead
+    - lead the way
+    - please continue
+    - continue
+    - it's okay to continue
+    - go on
+    - you can go on
+    - of course
+
+- intent: deny
+  examples: |
+    - no
+    - no good
+    - no no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - I don't have time.
+    - No, I don't
+    - That's not it
+    - don't
+    - stop
+    - no thanks
+    - no, thank you
+    - that's enough
+    - no more
+    - I'm tired
+    - I'm a bit tired
+    - not at all
+    - no, I'm not
+    - impossible
+
+- intent: user_thinking
+  examples: |
+    - I wonder
+    - Is that so
+    - I'm not sure
+    - I don't know
+    - I haven't decided
+    - I can't say
+    - Don't know
+    - Not sure
+    - Maybe
+    - Maybe later
+    - Slightly
+    - Just a minute
+    - Not sure if I can do that
+    - Not sure if that's possible
+    - Not sure if I can complete that
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: gratitude
+  examples: |
+    - thanks
+    - thank you
+    - that's very kind of you
+    - how kind of you
+    - you are so kind
+    - thanks for the explanation
+    - thanks for the suggestion
+    - That's helpful
+    - That's a big help
+    - That's great, cheers
+    - Cheers
+    - Thanks for the advice
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: user_understood
+  examples: |
+    - I see.
+    - So that's right.
+    - I got it.
+    - I understand.
+    - Understood.
+    - Okay, got it.
+    - Oh really
+    - Okay, sure.
+
+- intent: request_coaching_levels
+  examples: |
+    - Tell me my current coaching levels.
+    - What are my coaching levels?
+    - How is my coaching coming along?
+    - Let me know my coaching level.
+    - I want to know my coaching level.
+
+
+- intent: stay_motivated
+  examples: |
+    - How can I stay motivated to exercise?
+    - How can I keep motivated to workout?
+    - How can I remain motivated to do brain training?
+    - How can I motivate myself to cook?
+    - How can I motivate myself to wake up early?
+    - How can I remain motivated to change?
+    - How do I stay motivated?
+    - How can I improve my motivation?
+
